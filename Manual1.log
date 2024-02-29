@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.10)  29 FEB 2024 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.10)  29 FEB 2024 22:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/sina/Desktop/EC HW/Manual1/Manual1.tex"
-(/Users/sina/Desktop/EC HW/Manual1/Manual1.tex
+**"/Users/sina/Desktop/EC HW/report 1/Manual1.tex"
+(/Users/sina/Desktop/EC HW/report 1/Manual1.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -1001,12 +1001,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  22435 strings out of 476025
- 482665 string characters out of 5790017
+ 482668 string characters out of 5790017
  1861388 words of memory out of 5000000
  42453 multiletter control sequences out of 15000+600000
  557567 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,12n,102p,551b,1097s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,12n,102p,552b,1097s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/google/roboto/Roboto-Light.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/google/roboto/Roboto-LightItalic.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 Output written on Manual1.pdf (18 pages, 20942342 bytes).
 PDF statistics:

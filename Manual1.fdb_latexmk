@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1709231380 "/Users/sina/Desktop/EC HW/Manual1/Manual1.tex" "Manual1.pdf" "Manual1" 1709231383 0
-  "/Users/sina/Desktop/EC HW/Manual1/Manual1.tex" 1709231377 14305 a16ad2c140bbbbe408dd4fa711267795 ""
+["pdflatex"] 1709232963 "/Users/sina/Desktop/EC HW/report 1/Manual1.tex" "Manual1.pdf" "Manual1" 1709232967 0
+  "/Users/sina/Desktop/EC HW/report 1/Manual1.tex" 1709232960 14305 a16ad2c140bbbbe408dd4fa711267795 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc" 1576101225 3075 0696ceafc85b8352a913efb9ba64bc17 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/google/roboto/Roboto-Bold-lf-t1--base.tfm" 1576101225 1840 1834297dad21c65d0f959ffe1bfe4fbd ""
@@ -206,8 +206,8 @@
   "Fig/Q1.png" 1648304018 60088 f4e32ccf642e20af94ac93dcce518743 ""
   "Fig/cir1.pdf" 1677410520 93199 7b7080e61bccccaeca317147c0b57731 ""
   "Fig/cir2.pdf" 1677418742 93188 37d0428280e56ebfbe719a572b73253b ""
-  "Manual1.aux" 1709231383 5303 9c5d768bf4ce6b6a6c88202efafc920b "pdflatex"
-  "Manual1.tex" 1709231377 14305 a16ad2c140bbbbe408dd4fa711267795 ""
+  "Manual1.aux" 1709232966 5303 9c5d768bf4ce6b6a6c88202efafc920b "pdflatex"
+  "Manual1.tex" 1709232960 14305 a16ad2c140bbbbe408dd4fa711267795 ""
   "structure.tex" 517687852 7634 f76de8fa7541d09565ab879f4e514e3a ""
   (generated)
   "Manual1.aux"

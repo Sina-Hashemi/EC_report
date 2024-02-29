@@ -1,8 +1,8 @@
-PWD /Users/sina/Desktop/EC HW/Manual1
+PWD /Users/sina/Desktop/EC HW/report 1
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/sina/Desktop/EC HW/Manual1/Manual1.tex
+INPUT /Users/sina/Desktop/EC HW/report 1/Manual1.tex
 OUTPUT Manual1.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
