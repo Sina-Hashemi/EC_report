@@ -1,0 +1,458 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cleese Assignment (For Students)
+% LaTeX Template
+% Version 2.0 (27/5/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{float}
+
+%\usepackage[printwatermark]{xwatermark}
+%\newwatermark[allpages,color=gray!50,angle=45,scale=2.5,xpos=-5,ypos=-5]{Mohammad Hadi}
+
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+% Required
+\newcommand{\assignmentQuestionName}{Experiment} % The word to be used as a prefix to question numbers; example alternatives: Problem, Exercise
+\newcommand{\assignmentClass}{Electrical Circuits Lab (Taught by Mohammad Hadi)\\Manual 1 (Due on DDD.,\ mmm.\ dd,\ yyyy)} % Course (Lecturer)\\Assignment (Due date)
+\newcommand{\assignmentTitle}{} % Assignment title or name
+\newcommand{\assignmentAuthorName}{Sina Hashemi \& M.Mahdi Shokrzade\\402102668 - 402101985} % Student name\\Student number
+%----------------------------------------------------------------------------------------
+
+\newcommand{\PicScale}{0.25}
+
+\begin{document}
+\textbf{An oscilloscope is an electronic measuring device which provides a two-dimensional time-domain visual representation of electrical signals. In this experiment, you learn how to use a digital oscilloscope.
+}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\assignmentSection{Mandatory Experiments}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 1
+%----------------------------------------------------------------------------------------
+
+
+\begin{question}
+
+\questiontext{Download the catalog of the lab oscilloscope. Review the catalog and describe the functionality of the major control groups on the oscilloscope including  display group, vertical group, horizontal group, and trigger group.}
+
+\answer{
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/1.jpeg}
+\caption{Oscilloscope's front view.}
+\end{center}
+\end{figure}
+}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 2
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Turn on the oscilloscope and set its channels to GND input mode. Use vertical position knobs to move and adjust the ground levels. }
+
+\answer{
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/2.jpeg}
+\caption{Channel 2 adjusted.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/3.jpeg}
+\caption{Both channels adjusted.}
+\end{center}
+\end{figure}
+
+}
+
+\end{question}
+
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 3
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Set the first channel to DC input mode while no signal is fed to its probe. Watch how the horizontal axis is swept. Change the time/div knob and see its impact on the sweep speed. }
+
+\answer{
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/4.jpeg}
+\caption{first channel DC mode.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/5.jpeg}
+\caption{time/div set to 100ms.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/6.jpeg}
+\caption{time/div set to 10s.}
+\end{center}
+\end{figure}
+
+}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 4
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Connect a probe to the oscilloscope and set the volt/div knob to its minimum. Touch the probe tip by your finger. What do see on the oscilloscope screen? Change in input mode to AC, DC, and GND and check the results.}
+
+\answer{
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/7.jpeg}
+\caption{input mode set to???.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/8.jpeg}
+\caption{input mode set to???.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/9.jpeg}
+\caption{input mode set to DC.}
+\end{center}
+\end{figure}
+
+}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 5
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Connect a proper probe to the first channel of the oscilloscope and watch the calibrated signal of the built-in frequency generator. Read the frequency and amplitude of the calibrated signal. How can this signal be used for calibration check? What happens when the probe is set to 10X?}
+
+\answer{
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/10.jpeg}
+\caption{first channel connected to the oscilloscope calibrated signal
+generator.Pay attention to the channel error.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/11.jpeg}
+\caption{Probe set to 10X.}
+\end{center}
+\end{figure}
+
+}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 6
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Set the controls of the function generator to produce a sine wave of $1$ kHz frequency and $2$ V amplitude. Use the oscilloscope to see the signal. Read the frequency and amplitude of the sine wave. Is there any difference between the read and set frequencies? Why?}
+
+\answer{
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/12.jpeg}
+\caption{a sine wave of $1$ kHz frequency and $2$ V amplitude.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/13.jpeg}
+\caption{A picture of the function generator.}
+\end{center}
+\end{figure}
+
+}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 7
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Add a DC offset to the sine wave in the previous part and check the corresponding signal on the oscilloscope screen in different input modes of DC, AC, and GND.}
+
+\answer{
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/14.jpeg}
+\caption{input mode set to DC.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/15.jpeg}
+\caption{input mode set to AC.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/16.jpeg}
+\caption{input mode set to GND.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/17.jpeg}
+\caption{Function generator offset changed.}
+\end{center}
+\end{figure}
+
+}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 8
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Feed the two channels of the oscilloscope by a same $1$ KHz sine wave and investigate the functionality of the math operations such as Add and Inv.}
+
+\answer{
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/18.jpeg}
+\caption{Both channels are fed with a single function generator. Pay attention to the first channel zero error.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/19.jpeg}
+\caption{Add math function.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/20.jpeg}
+\caption{Inv math function.}
+\end{center}
+\end{figure}
+
+}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 9
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Repeat the previous part with two $1$ KHz sine waves produced from two different function generators. Explain your observations.}
+
+\answer{
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/21.png}
+\includegraphics[scale=\PicScale]{Fig/22.png}
+\includegraphics[scale=\PicScale]{Fig/23.png}
+\caption{Two $1$ KHz sine waves produced from two different function generators.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/24.png}
+\includegraphics[scale=\PicScale]{Fig/25.png}
+\includegraphics[scale=\PicScale]{Fig/26.png}
+\caption{Two sine waves gathered with each other.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\includegraphics[scale=\PicScale]{Fig/27.png}
+\includegraphics[scale=\PicScale]{Fig/28.png}
+\includegraphics[scale=\PicScale]{Fig/29.png}
+\caption{Two sine waves subtracted from each other.}
+\end{center}
+\end{figure}
+
+}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 10
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Use the oscilloscope to watch and measure the potential difference between nodes A and B in the circuit of Fig. \ref{fig:cir1}, where the sinusoidal source has a frequency of $1$ kHz and a peak to peak amplitude of $5$ V. Can you measure the desired voltage simply using a single probe? If no, describe the problem and propose a solution.
+}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8,angle=0]{Fig/cir1.pdf}
+\caption{A simple resistive circuit.} \label{fig:cir1}
+\end{figure}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 11
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Set the controls of the function generator to produce a sine wave of $70$ Hz frequency and $1$ V amplitude. Connect the sine wave to the first channel of the oscilloscope and see it for various triggering sources. Discuss the observations.}
+
+\answer{}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 12
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Change the trigger level and trigger slope in the previous part and analyze your observations.}
+
+\answer{}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 13
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Feed two sine waves with differences frequencies to two channels of the scope and see the corresponding Lissajous curve on the XY mode. Characterize the Lissajous curve. Is there any relationship between the Lissajous curve and the  frequencies of the sine waves? }
+
+\answer{}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 14
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Build the circuit of Fig. \ref{fig:cir2} on the breadboard and see the labeled voltages in the XY mode on the oscilloscope screen. Sweep the frequency and amplitudes of the input sine wave and observe the results. Can you interpret the results?
+}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8,angle=0]{Fig/cir2.pdf}
+\caption{An RC circuit.} \label{fig:cir2}
+\end{figure}
+
+\end{question}
+
+
+\assignmentSection{Bonus Experiments}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 15
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Consider the block diagram of a typical analog oscilloscope shown in Fig. \ref{fig:Q1} and explain how an analog oscilloscope works. How does an analog oscilloscope differ from its digital counterpart? }
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1,angle=0]{Fig/Q1.png}
+\caption{Block diagram of an analog oscilloscope.} \label{fig:Q1}
+\end{figure}
+
+\answer{}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 16
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{What might lead to a distorted representation of the oscilloscope calibration signal on the screen? What do you offer to resolve the problem?
+}
+\answer{}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 17
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Return your work report by filling the \LaTeX template of the manual. Include useful and high-quality images to make the report more readable and understandable.}
+
+\end{question}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
