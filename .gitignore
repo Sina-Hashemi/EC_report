@@ -1,6 +1,8 @@
-Manual1.fdb_latexmk
-Manual1.fls
-Manual1.log
-Manual1.pdf
-Manual1.aux
-Manual1.synctex.gz
+.DS_Store
+
+Report 1\Manual1.fdb_latexmk
+Report 1\Manual1.fls
+Report 1\Manual1.log
+Report 1\Manual1.pdf
+Report 1\Manual1.aux
+Report 1\Manual1.synctex.gz
