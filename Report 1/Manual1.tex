@@ -350,30 +350,33 @@
 
         \begin{figure}[H]
             \begin{center}
-                \includegraphics[scale=\PicScale]{Fig/21.png}
-                \includegraphics[scale=\PicScale]{Fig/22.png}
-                \includegraphics[scale=\PicScale]{Fig/23.png}
+                \includegraphics[scale=0.1]{Fig/21.png}
+                \includegraphics[scale=0.1]{Fig/22.png}
+                \includegraphics[scale=0.1]{Fig/23.png}
                 \caption{Two $1$ KHz sine waves produced from two different function generators.}
             \end{center}
         \end{figure}
 
         \begin{figure}[H]
             \begin{center}
-                \includegraphics[scale=\PicScale]{Fig/24.png}
-                \includegraphics[scale=\PicScale]{Fig/25.png}
-                \includegraphics[scale=\PicScale]{Fig/26.png}
+                \includegraphics[scale=0.1]{Fig/24.png}
+                \includegraphics[scale=0.1]{Fig/25.png}
+                \includegraphics[scale=0.1]{Fig/26.png}
                 \caption{Two sine waves gathered with each other.}
             \end{center}
         \end{figure}
 
         \begin{figure}[H]
             \begin{center}
-                \includegraphics[scale=\PicScale]{Fig/27.png}
-                \includegraphics[scale=\PicScale]{Fig/28.png}
-                \includegraphics[scale=\PicScale]{Fig/29.png}
+                \includegraphics[scale=0.1]{Fig/27.png}
+                \includegraphics[scale=0.1]{Fig/28.png}
+                \includegraphics[scale=0.1]{Fig/29.png}
                 \caption{Two sine waves subtracted from each other.}
             \end{center}
         \end{figure}
+
+        \paragraph*{}
+        As it is clear from the pictures, the first wave is stationary and the second wave is moving. The reason for this is that the oscilloscope considers its time origin based on one of these two input waves. We also know that each wave is produced by a separate function generators and because of testing errors, the frequency of these two waves are slightly different. Therefore, the secondary wave moves in the monitor.
 
     }
 
@@ -387,6 +390,7 @@
 
     \questiontext{Use the oscilloscope to watch and measure the potential difference between nodes A and B in the circuit of Fig. \ref{fig:cir1}, where the sinusoidal source has a frequency of $1$ kHz and a peak to peak amplitude of $5$ V. Can you measure the desired voltage simply using a single probe? If no, describe the problem and propose a solution.
     }
+
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.8,angle=0]{Fig/cir1.pdf}
@@ -394,6 +398,10 @@
     \end{figure}
 
     \answer{
+
+        \paragraph*{}
+        We connected the ground base of both input channels of the oscilloscope to the ground base of the function generator. We also connected the other end of the probe of the first channel to point A and the other end of the probe of the second channel to point B, and using the subtraction option of the oscilloscope subtracted these two waves to obtain the potential difference between the two ends of the resistance.
+
         \begin{figure}[H]
             \begin{center}
                 \includegraphics[scale=\PicScale]{Fig/30.jpeg}
@@ -415,17 +423,20 @@
             \end{center}
         \end{figure}
 
+        \paragraph*{}
+        By switching the positive and negative ends of the function generator with each other, connecting the ground base of the oscilloscope probe to the negative end of the function generator (which is one of the two ends of the resistor) and connecting the positive end of the oscilloscope to the other end of the resistor, we can measure the potential difference between the two ends of the resistor.
+
         \begin{figure}[H]
             \begin{center}
                 \includegraphics[scale=\PicScale]{Fig/33.jpeg}
-                \caption{Circuit related to resistance voltage measurement with a probe.}
+                \caption{Circuit related to resistance voltage measurement with one probe.}
             \end{center}
         \end{figure}
 
         \begin{figure}[H]
             \begin{center}
                 \includegraphics[scale=\PicScale]{Fig/34.jpeg}
-                \caption{Measuring resistance voltage with a probe.}
+                \caption{Measuring resistance voltage with one probe.}
             \end{center}
         \end{figure}
     }
@@ -475,6 +486,14 @@
                 \caption{Trigger source set to Line.}
             \end{center}
         \end{figure}
+
+        \paragraph*{} Oscilloscope has various triggering sources. CH1, CH2, External and Line.
+
+        \paragraph*{CH1 and CH2 sources:} In these two cases, the oscilloscope sets the time origin based on channel 1 and channel 2, respectively. Therefore, in the first state, the wave is stationary, but in the second state, the wave moves.
+
+        \paragraph*{External source:} In this case, the oscilloscope sets the time origin based on the input given to the third base (external base).
+
+        \paragraph*{Line source:} In this case, the oscilloscope sets the time origin based on the city's electricity frequency
     }
 
 \end{question}
@@ -538,6 +557,9 @@
             \end{center}
         \end{figure}
         
+        \paragraph*{} By changing the level trigger, if it goes out of the wave range, it causes the wave to move on the screen.
+
+        \paragraph*{} By changing the trigger slope, the wave is projected according to the horizontal line.
     }
 
 
@@ -596,6 +618,10 @@
                 \caption{First Function generator set to $I donno Hz$ and Second one set to $100Hz$.}
             \end{center}
         \end{figure}
+
+        \[
+            \frac{\text{Number of horizontal peaks}}{\text{Number of vertical peaks}} = \frac{\text{The frequency of the second generator}}{\text{The frequency of the first generator}}
+        \]
     }
 
 \end{question}
