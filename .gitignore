@@ -1,22 +1,12 @@
 .DS_Store
 
-Report 1/Manual1.fdb_latexmk
-Report 1/Manual1.fls
-Report 1/Manual1.log
+*.fdb_latexmk
+*.fls
+*.log
+*.aux
+*.synctex.gz
+
 Report 1/Manual1.pdf
-Report 1/Manual1.aux
-Report 1/Manual1.synctex.gz
-
-Report 2/Manual2.fdb_latexmk
-Report 2/Manual2.fls
-Report 2/Manual2.log
 Report 2/Manual2.pdf
-Report 2/Manual2.aux
-Report 2/Manual2.synctex.gz
-
-Report 3/Manual3.fdb_latexmk
-Report 3/Manual3.fls
-Report 3/Manual3.log
 Report 3/Manual3.pdf
-Report 3/Manual3.aux
-Report 3/Manual3.synctex.gz
+Report 4/Manual4.pdf
