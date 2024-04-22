@@ -37,6 +37,8 @@
 \newcommand{\assignmentAuthorName}{Sina Hashemi \& M.Mahdi Shokrzade\\402102668 - 402101985} % Student name\\Student number
 %----------------------------------------------------------------------------------------
 
+\newcommand{\PicScale}{0.2}
+
 \begin{document}
 \textbf{Real circuit elements are approximate physical implementation of ideal circuit elements. In this experiment, you become familiar with the main limitations of the conventional real circuit elements such as resistors, capacitors, and diodes.
 }
@@ -63,18 +65,33 @@
     %--------------------------------------------
     \begin{subquestion}{Build the circuit on a breadboard. Can you find a $9$ k$\Omega$ resistor in the stackable element storage box? }
         \answer{
-            %  test comment to see if I have access to project or no!
+            No because $9k$ is not in E24 standard.
         }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Which resistor is a suitable replacement for a $9$ k$\Omega$ resistor? Pick that resistor and read its color code.}
-        \answer{}
+        \answer{
+            We used two parallel $18k\Omega$ resistors to obtain $9k\Omega$. We could also use an $8k\Omega$ because E12 resistors have $5\%$ error.
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Measure the voltage across each resistor. Is there any difference between the measured and analytical values?}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/1.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.12,angle=0]{Fig/2.jpeg}
+                \includegraphics[scale=0.12,angle=0]{Fig/3.jpeg}
+                \caption{measured voltage value.}
+            \end{figure}
+            
+        }
     \end{subquestion}
 
 \end{question}
@@ -90,12 +107,17 @@
 
     %--------------------------------------------
     \begin{subquestion}{Pick up ten E12 $1$ k$\Omega$ resistors and measure their resistance. Calculate the maximum, minimum, mean, variance, and standard deviation of the measured values and interpret them considering the nominal and tolerance values. }
-        \answer{}
+        \answer{
+            We used E24 resistors instead. \\
+            values: $1.0103, 0.9940, 1.0027, 1.0018, 1.0012, 1.0015, 0.9964, 0.9996, 0.9979$ and $1.0135~k\Omega$.
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Repeat the previous part for ten E12 $10$ $\mu$F capacitors. }
-        \answer{}
+        \answer{
+            values: $9.76, 9.64, 9.05, 9.49, 9.19, 9.32, 9.61, 9.73, 9.37$ and $9.31~\mu F$
+        }
     \end{subquestion}
 
 \end{question}
@@ -142,7 +164,16 @@
 
     %--------------------------------------------
     \begin{subquestion}{Connect a $16$ V aluminum electrolytic capacitor directly to a $30$ V DC voltage and observe the results.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/4.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/5.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/6.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/7.jpeg}
+            \end{figure}
+            
+        }
     \end{subquestion}
 
     %--------------------------------------------
@@ -168,12 +199,112 @@
 
     %--------------------------------------------
     \begin{subquestion}{Replace $D$ with a $1$ k$\Omega$ resistor. Sweep the DC voltage over negative and positive ranges and record the voltage and current of the resistor using a multimeter. Use the recorded data to plot the characteristic curve of the resistor.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/8.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/9.jpeg}
+                \caption{DC power supply set to $10V$ and $-10V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/10.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/11.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/12.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/13.jpeg}
+                \caption{First image is for D and $10V$, second image is for r and $10V$. \\
+                \hspace*{14mm} Third image is for D and $-10V$, last image is for r and $-10V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/14.jpeg}
+                \caption{DC power supply set to $5V$ and $-5V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/15.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/16.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/17.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/18.jpeg}
+                \caption{First image is for D and $5V$, second image is for r and $5V$. \\
+                \hspace*{14mm} Third image is for D and $-5V$, last image is for r and $-5V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/19.jpeg}
+                \caption{DC power supply set to $2.5V$ and $-2.5V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/20.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/21.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/22.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/23.jpeg}
+                \caption{First image is for D and $2.5V$, second image is for r and $2.5V$. \\
+                \hspace*{14mm} Third image is for D and $-2.5V$, last image is for r and $-2.5V$.}
+            \end{figure}
+
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Repeat the previous part for a diode.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/24.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/25.jpeg}
+                \caption{DC power supply set to $10V$ and $-10V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/26.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/27.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/28.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/29.jpeg}
+                \caption{First image is for D and $10V$, second image is for r and $10V$. \\
+                \hspace*{14mm} Third image is for D and $-10V$, last image is for r and $-10V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/30.jpeg}
+                \caption{DC power supply set to $5V$ and $-5V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/31.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/32.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/33.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/34.jpeg}
+                \caption{First image is for D and $5V$, second image is for r and $5V$. \\
+                \hspace*{14mm} Third image is for D and $-5V$, last image is for r and $-5V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/35.jpeg}
+                \caption{DC power supply set to $2.5V$ and $-2.5V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/36.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/37.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/38.jpeg}
+                \includegraphics[scale=0.08,angle=0]{Fig/39.jpeg}
+                \caption{First image is for D and $2.5V$, second image is for r and $2.5V$. \\
+                \hspace*{14mm} Third image is for D and $-2.5V$, last image is for r and $-2.5V$.}
+            \end{figure}
+
+        }
     \end{subquestion}
 
 
@@ -208,12 +339,39 @@
 
     %--------------------------------------------
     \begin{subquestion}{Replace $D$ with a $1$ k$\Omega$ resistor and see the corresponding characteristic curve on the oscilloscope screen.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/1000.jpeg}
+                \caption{A photo of all the setup and I don't have any idea why should i put it here just because my friend i guess said and I don't know whatever I don't care about my life anymore and I wish I die as soon as possible and also it doesn't mean that I don't trust him I just didn't think at the first that putting photos makes any sense otherwise his comments and ideas are wonderful Edit: now I saw that this photo is very cute and I took a perfect photo which meets high standards just look at the fancy background of this masterpease(I donno the right spell of that word) and how that beautiful Harry Potter pencil case matches the rest of setup and the position of probes and the color difference between them and the perfect line on the screen which I prefer diode characteristic curve because it's more complicated and matches with Electrical engineering.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/40.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/41.jpeg}
+                \caption{The oscilloscope showing resistor characteristic curve.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Repeat the previous part for a diode.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/42.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/43.jpeg}
+                \caption{The oscilloscope showing diode characteristic curve.}
+            \end{figure}
+        }
     \end{subquestion}
 
 
