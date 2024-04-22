@@ -54,33 +54,33 @@
 
 \begin{question}
 
-\questiontext{Build the circuit shown in Fig. \ref{fig:cir1} on a breadboard.}
+    \questiontext{Build the circuit shown in Fig. \ref{fig:cir1} on a breadboard.}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1.2,angle=0]{Fig/cir1.pdf}
-\caption{A resistive circuit.} \label{fig:cir1}
-\end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=1.2,angle=0]{Fig/cir1.pdf}
+        \caption{A resistive circuit.} \label{fig:cir1}
+    \end{figure}
 
-%--------------------------------------------
-\begin{subquestion}{Measure the voltages of the circuit using a multimeter and verify the KVL $v_s=v_1+v_2$.} 
-\answer{}
-\end{subquestion}
+    %--------------------------------------------
+    \begin{subquestion}{Measure the voltages of the circuit using a multimeter and verify the KVL $v_s=v_1+v_2$.}
+        \answer{}
+    \end{subquestion}
 
-%--------------------------------------------
-\begin{subquestion}{Measure the currents of the circuit indirectly using a multimeter and verify the KCL $i_1=i_2+i_3$.} 
-\answer{}
-\end{subquestion}
+    %--------------------------------------------
+    \begin{subquestion}{Measure the currents of the circuit indirectly using a multimeter and verify the KCL $i_1=i_2+i_3$.}
+        \answer{}
+    \end{subquestion}
 
-%--------------------------------------------
-\begin{subquestion}{Reverse the direction of the current $i_2$ and the polarity of the voltage $v_3$ in Fig. \ref{fig:cir1} and repeat the previous parts. } 
-\answer{}
-\end{subquestion}
+    %--------------------------------------------
+    \begin{subquestion}{Reverse the direction of the current $i_2$ and the polarity of the voltage $v_3$ in Fig. \ref{fig:cir1} and repeat the previous parts. }
+        \answer{}
+    \end{subquestion}
 
-%--------------------------------------------
-\begin{subquestion}{Change the resistors to $10$ k$\Omega$ and repeat the previous parts. } 
-\answer{}
-\end{subquestion}
+    %--------------------------------------------
+    \begin{subquestion}{Change the resistors to $10$ k$\Omega$ and repeat the previous parts. }
+        \answer{}
+    \end{subquestion}
 
 \end{question}
 
@@ -90,29 +90,29 @@
 
 \begin{question}
 
-\questiontext{Build the circuit shown in Fig. \ref{fig:cir2} on a breadboard and use two oscilloscopes to show the marked voltages. Use external triggering to synchronize the two oscilloscopes.}
+    \questiontext{Build the circuit shown in Fig. \ref{fig:cir2} on a breadboard and use two oscilloscopes to show the marked voltages. Use external triggering to synchronize the two oscilloscopes.}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1.2,angle=0]{Fig/cir2.pdf}
-\caption{A sample circuit.} \label{fig:cir2}
-\end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=1.2,angle=0]{Fig/cir2.pdf}
+        \caption{A sample circuit.} \label{fig:cir2}
+    \end{figure}
 
 
-%--------------------------------------------
-\begin{subquestion}{Verify the KCL $i_1=i_2+i_4$ graphically using the oscilloscopes.} 
-\answer{}
-\end{subquestion}
+    %--------------------------------------------
+    \begin{subquestion}{Verify the KCL $i_1=i_2+i_4$ graphically using the oscilloscopes.}
+        \answer{}
+    \end{subquestion}
 
-%--------------------------------------------
-\begin{subquestion}{Change the square wave to sine wave and repeat the previous part.} 
-\answer{}
-\end{subquestion}
+    %--------------------------------------------
+    \begin{subquestion}{Change the square wave to sine wave and repeat the previous part.}
+        \answer{}
+    \end{subquestion}
 
-%--------------------------------------------
-\begin{subquestion}{Redo the previous parts when the capacitor is replaced with a diode.} 
-\answer{}
-\end{subquestion}
+    %--------------------------------------------
+    \begin{subquestion}{Redo the previous parts when the capacitor is replaced with a diode.}
+        \answer{}
+    \end{subquestion}
 
 \end{question}
 
@@ -124,10 +124,10 @@
 %----------------------------------------------------------------------------------------
 \begin{question}
 
-\questiontext{Write a MATLAB/Python code that receives the data set $(x_i,y_i), i=1,\cdots,n$ and determines the optimal coefficients of the linear curve $y=ax+b$ that fits the data set with the least square error $\epsilon=\sum_{i=1}^n(y_i-ax_i-b)^2$.
-}
+    \questiontext{Write a MATLAB/Python code that receives the data set $(x_i,y_i), i=1,\cdots,n$ and determines the optimal coefficients of the linear curve $y=ax+b$ that fits the data set with the least square error $\epsilon=\sum_{i=1}^n(y_i-ax_i-b)^2$.
+    }
 
-\answer{}
+    \answer{}
 
 \end{question}
 
@@ -137,64 +137,64 @@
 
 \begin{question}
 
-\questiontext{Tab. \ref{tab:Q1} includes the measured voltage and current pairs for an unknown LTI resistor. Use linear curve fitting to estimate the characteristic curve of the resistor and its resistance.}
+    \questiontext{Tab. \ref{tab:Q1} includes the measured voltage and current pairs for an unknown LTI resistor. Use linear curve fitting to estimate the characteristic curve of the resistor and its resistance.}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{l c c c c c c c c c c c c c c c c c c c c}
-\toprule
-\textbf{Voltage (V)} &
-$$02.03$$ &
-$$04.12$$ &
-$$06.25$$ &
-$$08.65$$ &
-$$10.00$$ &
-$$14.26$$ &
-$$16.76$$ &
-$$17.56$$ &
-$$19.75$$ &
-$$21.28$$  \\
-\textbf{Current (mA)} &
-$$00.97$$ &
-$$01.90$$ &
-$$03.18$$ &
-$$03.94$$ &
-$$05.41$$ &
-$$05.61$$ &
-$$06.66$$ &
-$$07.43$$ &
-$$08.34$$ &
-$$10.73$$ \\
-\bottomrule
-\toprule
-\textbf{Voltage (V)} &
-$$26.13$$ &
-$$25.70$$ &
-$$26.37$$ &
-$$32.52$$ &
-$$32.27$$ &
-$$33.38$$ &
-$$36.68$$ &
-$$36.40$$ &
-$$38.72$$ &
-$$47.89$$ \\
-\textbf{Current (mA)} &
-$$11.17$$ &
-$$12.11$$ &
-$$12.07$$ &
-$$14.98$$ &
-$$15.36$$ &
-$$15.52$$ &
-$$17.04$$ &
-$$17.64$$ &
-$$17.38$$ &
-$$18.95$$ \\
-\bottomrule
-\end{tabular}
-\caption{Measured voltages and currents for an LTI resistor.}\label{tab:Q1}
-\end{table}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{l c c c c c c c c c c c c c c c c c c c c}
+            \toprule
+            \textbf{Voltage (V)}  &
+            $$02.03$$             &
+            $$04.12$$             &
+            $$06.25$$             &
+            $$08.65$$             &
+            $$10.00$$             &
+            $$14.26$$             &
+            $$16.76$$             &
+            $$17.56$$             &
+            $$19.75$$             &
+            $$21.28$$               \\
+            \textbf{Current (mA)} &
+            $$00.97$$             &
+            $$01.90$$             &
+            $$03.18$$             &
+            $$03.94$$             &
+            $$05.41$$             &
+            $$05.61$$             &
+            $$06.66$$             &
+            $$07.43$$             &
+            $$08.34$$             &
+            $$10.73$$               \\
+            \bottomrule
+            \toprule
+            \textbf{Voltage (V)}  &
+            $$26.13$$             &
+            $$25.70$$             &
+            $$26.37$$             &
+            $$32.52$$             &
+            $$32.27$$             &
+            $$33.38$$             &
+            $$36.68$$             &
+            $$36.40$$             &
+            $$38.72$$             &
+            $$47.89$$               \\
+            \textbf{Current (mA)} &
+            $$11.17$$             &
+            $$12.11$$             &
+            $$12.07$$             &
+            $$14.98$$             &
+            $$15.36$$             &
+            $$15.52$$             &
+            $$17.04$$             &
+            $$17.64$$             &
+            $$17.38$$             &
+            $$18.95$$               \\
+            \bottomrule
+        \end{tabular}
+        \caption{Measured voltages and currents for an LTI resistor.}\label{tab:Q1}
+    \end{table}
 
-\answer{}
+    \answer{}
 
 \end{question}
 
@@ -206,7 +206,7 @@ $$18.95$$ \\
 
 \begin{question}
 
-\questiontext{Return your work report by filling the \LaTeX template of the manual. Include useful and high-quality images to make the report more readable and understandable.}
+    \questiontext{Return your work report by filling the \LaTeX template of the manual. Include useful and high-quality images to make the report more readable and understandable.}
 
 \end{question}
 
