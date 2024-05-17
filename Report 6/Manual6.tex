@@ -36,6 +36,7 @@
 \newcommand{\assignmentTitle}{} % Assignment title or name
 \newcommand{\assignmentAuthorName}{Sina Hashemi \& M.Mahdi Shokrzade\\402102668 - 402101985} % Student name\\Student number
 %----------------------------------------------------------------------------------------
+\newcommand{\PicScale}{0.2}
 
 \begin{document}
 \textbf{Op-amps are versatile elements used to implement various circuits such as amplifiers, comparators, filters, and son on. In this experiment, you become familiar with a typical op-amp and its common applications.
@@ -62,17 +63,74 @@
 
     %--------------------------------------------
     \begin{subquestion}{Set $V_{s1}=0$ or equivalently, connect the inverting input of the op-amp to the ground. Apply a $1$-V $1$-kHz sine voltage $v_{s2}(t)$ to the non-inverting input. Watch the the output voltage and the non-inverting input voltage of the op-amp simultaneously on the oscilloscope. Interpret the results. Change the sine wave to a triangle wave and observe the results.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.1,angle=0]{Fig/1.jpeg}
+                \includegraphics[scale=0.1,angle=0]{Fig/2.jpeg}
+                \caption{Feeding Op-Amp using $+18V$ and $-18V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/3.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/4.jpeg}
+                \caption{oscilloscope's screen.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Set $V_{s1}=\pm 0.5$ V and repeat the previous part.}
-        \answer{}
-    \end{subquestion}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.1,angle=0]{Fig/5.jpeg}
+                \includegraphics[scale=0.1,angle=0]{Fig/6.jpeg}
+                \includegraphics[scale=0.1,angle=0]{Fig/8.jpeg}
+                \caption{The circuit used for making $\pm 0.5V$ using potentiometer.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/7.jpeg}
+                \caption{oscilloscope's screen for $+0.5V$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/9.jpeg}
+                \caption{oscilloscope's screen for $-0.5V$.}
+            \end{figure}
+            }
+        \end{subquestion}
 
-    %--------------------------------------------
-    \begin{subquestion}{Swap the input voltages to the op-amp and redo the previous parts.}
-        \answer{}
+        %--------------------------------------------
+        \begin{subquestion}{Swap the input voltages to the op-amp and redo the previous parts.}
+            \answer{
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[scale=\PicScale,angle=0]{Fig/10.jpeg}
+                    \caption{The circuit.}
+                \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[scale=\PicScale,angle=0]{Fig/11.jpeg}
+                    \caption{oscilloscope's screen for $0V$.}
+                \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[scale=\PicScale,angle=0]{Fig/12.jpeg}
+                    \caption{oscilloscope's screen for $+0.5V$.}
+                \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[scale=\PicScale,angle=0]{Fig/13.jpeg}
+                    \caption{oscilloscope's screen for $-0.5V$.}
+                \end{figure}
+
+        }
     \end{subquestion}
 
 
@@ -94,12 +152,33 @@
 
     %--------------------------------------------
     \begin{subquestion}{Apply a $1$-V $1$-kHz sine voltage $v_{s2}(t)$ to the non-inverting input. Watch the the output voltage and the non-inverting input voltage of the op-amp simultaneously on the oscilloscope. Turn the knob of the potentiometer and observe the results.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/14.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/15.png}
+                \includegraphics[scale=0.08,angle=0]{Fig/16.png}
+                \includegraphics[scale=0.08,angle=0]{Fig/17.png}
+                \caption{oscilloscope's screen.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Repeat the previous part for a triangle wave.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/18.png}
+                \includegraphics[scale=0.08,angle=0]{Fig/19.png}
+                \includegraphics[scale=0.08,angle=0]{Fig/20.png}
+                \caption{oscilloscope's screen.}
+            \end{figure}
+        }
     \end{subquestion}
 
 
@@ -121,22 +200,88 @@
 
     %--------------------------------------------
     \begin{subquestion}{Apply a $0.5$-V $1$-kHz sine voltage $v_{s}(t)$ to the input of the amplifier. Watch the the output and input voltages of the amplifier simultaneously on the oscilloscope. Calculate the gain of the amplifier.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/21.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/22.jpeg}
+                \caption{oscilloscope's screen for $0.5V$ voltage.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/23.jpeg}
+                \caption{oscilloscope's screen for $5mV$ voltage which used for Calculating Op-Amp's gain.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Devise an experiment to measure the input and output resistance of the amplifier module.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/123456.jpeg}
+                \caption{note for mohammad Mahdi, delete after read!!!!! its for helping you to write report and \textbf{should not be in final report}}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/38.jpeg}
+                \caption{Circuit for $R_{in}$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/39.jpeg}
+                \caption{oscilloscope's screen for $R_{in}$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/40.jpeg}
+                \caption{Circuit for $R_{out}$ when $R_L \to \infty$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/41.jpeg}
+                \caption{oscilloscope's screen for $R_{in}$ when $R_L \to \infty$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/42.jpeg}
+                \caption{Circuit for $R_{out}$ when $R_L = 1k\Omega$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/43.jpeg}
+                \caption{oscilloscope's screen for $R_{in}$ when $R_L = 1k\Omega$.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Increase the amplitude of the input $1$-kHz sine wave and record your observations. Interpret and discuss the results.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/24.png}
+                \includegraphics[scale=0.08,angle=0]{Fig/25.png}
+                \includegraphics[scale=0.08,angle=0]{Fig/26.png}
+                \caption{oscilloscope's screen for different input voltages.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Increase the frequency of the input $0.5$-V sine wave and record your observations. Interpret and discuss the results.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/27.jpeg}
+                \caption{The Op-Amp can't follow input in high-frequency inputs.}
+            \end{figure}
+        }
     \end{subquestion}
 
 \end{question}
@@ -158,22 +303,89 @@
 
     %--------------------------------------------
     \begin{subquestion}{Apply a $0.5$-V $1$-kHz sine voltage $v_{s}(t)$ to the input of the amplifier. Watch the the output and input voltages of the amplifier simultaneously on the oscilloscope. Calculate the gain of the amplifier.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/28.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/29.jpeg}
+                \caption{oscilloscope's screen for $0.5V$ voltage.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/30.jpeg}
+                \caption{oscilloscope's screen for $5mV$ voltage which used for Calculating Op-Amp's gain.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Measure the input and output resistance of the amplifier module experimentally.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/123456.jpeg}
+                \caption{note for mohammad Mahdi, delete after read!!!!! its for helping you to write report and \textbf{should not be in final report}}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/44.jpeg}
+                \caption{Circuit for $R_{in}$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/45.jpeg}
+                \caption{oscilloscope's screen for $R_{in}$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.1,angle=0]{Fig/46.jpeg}
+                \includegraphics[scale=0.1,angle=0]{Fig/47.jpeg}
+                \caption{voltages measured by multimeter for more accurate number.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/48.jpeg}
+                \caption{Circuit for $R_{out}$ when $R_L \to \infty$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/49.jpeg}
+                \caption{oscilloscope's screen for $R_{in}$ when $R_L \to \infty$.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/50.jpeg}
+                \caption{oscilloscope's screen for $R_{in}$ when $R_L = 1k\Omega$.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Increase the amplitude of the input $1$-kHz sine wave and record your observations. Interpret and discuss the results.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.08,angle=0]{Fig/31.png}
+                \includegraphics[scale=0.08,angle=0]{Fig/32.png}
+                \includegraphics[scale=0.08,angle=0]{Fig/33.png}
+                \caption{oscilloscope's screen for different input voltages.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Increase the frequency of the input $0.5$-V sine wave and record your observations. Interpret and discuss the results.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/34.jpeg}
+                \caption{The Op-Amp can't follow input in high-frequency inputs.}
+            \end{figure}
+        }
     \end{subquestion}
 
 \end{question}
@@ -194,12 +406,29 @@
 
     %--------------------------------------------
     \begin{subquestion}{Apply a $100$-mV $1$-kHz sine voltage $v_{s}(t)$ to the input of the cascaded amplifiers. Watch the the output and input voltages of the cascaded amplifiers simultaneously on the oscilloscope. Calculate the overall gain of the cascaded amplifiers.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/35.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/36.jpeg}
+                \caption{oscilloscope's screen.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Swap the order of the amplifiers and repeat the previous part. Is there any difference between the measured gains in the two experiments? Explain.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/37.jpeg}
+                \caption{The oscilloscope's screen.}
+            \end{figure}
+        }
     \end{subquestion}
 
 \end{question}
