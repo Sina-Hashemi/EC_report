@@ -20,6 +20,8 @@
 
 \documentclass[11pt]{article}
 \usepackage{float}
+\usepackage{tikz}
+\usepackage{pgfplots}
 
 %\usepackage[printwatermark]{xwatermark}
 %\newwatermark[allpages,color=gray!50,angle=45,scale=2.5,xpos=-5,ypos=-5]{Mohammad Hadi}
@@ -65,7 +67,10 @@
     %--------------------------------------------
     \begin{subquestion}{Build the circuit on a breadboard. Can you find a $9$ k$\Omega$ resistor in the stackable element storage box? }
         \answer{
-            No because $9k$ is not in E24 standard.
+            We used two parallel $18k\Omega$ resistors to obtain $9k\Omega$.
+            The $9k\Omega$ resistor is not available in the stackable element storage box since
+            it's not a standard value in the E12 series.
+
         }
     \end{subquestion}
 
@@ -91,6 +96,8 @@
                 \caption{measured voltage value.}
             \end{figure}
 
+            Yes, there is a difference between the values and the reason is
+            the tolerance of the resistors.
         }
     \end{subquestion}
 
@@ -132,12 +139,16 @@
 
     %--------------------------------------------
     \begin{subquestion}{Measure the resistance of a carbon resistor in room temperature. Redo the measurement when the resistor is heated by a soldering iron and when is cooled by a cooling spray. }
-        \answer{}
+        \answer{
+            This part was done by the lab supervisor.
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Repeat the previous part for a metal film resistor, a ceramic capacitor, and a multi-layer capacitor. }
-        \answer{}
+        \answer{
+            This part was done by the lab supervisor.
+        }
     \end{subquestion}
 
 \end{question}
@@ -150,7 +161,9 @@
 
     \questiontext{\underline{This experiment should be done by the lab supervisor}. Each resistor has a specific maximum power rating. Connect a $0.25$ W $10$ $\Omega$ resistor to a DC power supply using an alligator clip wire. Sweep the voltage from $0$ to $5$ V and observe the results.}
 
-    \answer{}
+    \answer{
+        This part was done by the lab supervisor.
+    }
 
 \end{question}
 
@@ -173,12 +186,16 @@
                 \includegraphics[scale=0.08,angle=0]{Fig/7.jpeg}
             \end{figure}
 
+            This part was done by the lab supervisor.
+
         }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Connect a $16$ V aluminum electrolytic capacitor inversely to a $16$ V DC voltage and observe the results.}
-        \answer{}
+        \answer{
+            This part was done by the lab supervisor.
+        }
     \end{subquestion}
 
 \end{question}
@@ -249,6 +266,85 @@
                     \hspace*{14mm} Third image is for D and $-2.5V$, last image is for r and $-2.5V$.}
             \end{figure}
 
+            The points for D element are:
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+                    \hline
+                    $V$   & $-10$   & $-5$    & $-2.5$  & $0$ & $2.5$  & $5$    & $10$   \\ \hline
+                    $V_d$ & $-5.02$ & $-2.54$ & $-1.26$ & $0$ & $1.26$ & $2.54$ & $5.04$ \\ \hline
+                \end{tabular}
+            \end{table}
+
+            The exact value of r resistance was $0.991k\Omega$ (using a multimeter).
+            Using the Ohm's law, we can calculate the current flowing through the circuit, and then,
+            since we already know the voltage of D element, we can plot the characteristic curve of the D element.
+            The points $(V,V_r)$ for r resistor are:
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+                    \hline
+                    $V$   & $-10$   & $-5$    & $-2.5$  & $0$ & $2.5$  & $5$    & $10$   \\ \hline
+                    $V_r$ & $-4.99$ & $-2.52$ & $-1.25$ & $0$ & $1.25$ & $2.52$ & $5.00$ \\ \hline
+                \end{tabular}
+            \end{table}
+
+            So the current flowing through the circuit based on V is:
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+                    \hline
+                    $V$ & $-10$     & $-5$      & $-2.5$    & $0$ & $2.5$    & $5$      & $10$     \\ \hline
+                    $I$ & $-5.00mA$ & $-2.52mA$ & $-1.25mA$ & $0$ & $1.26mA$ & $2.52mA$ & $5.00mA$ \\ \hline
+                \end{tabular}
+            \end{table}
+
+            So the $(V_D - I)$ points for D element are:
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+                    \hline
+                    $V_D$ & $-5.02$   & $-2.54$   & $-1.26$   & $0$ & $1.26$   & $2.54$   & $5.04$   \\ \hline
+                    $I$   & $-5.00mA$ & $-2.52mA$ & $-1.25mA$ & $0$ & $1.26mA$ & $2.52mA$ & $5.00mA$ \\ \hline
+                \end{tabular}
+            \end{table}
+
+            Using the points, the plot will be:
+            \begin{figure}[H]
+                \centering
+                \begin{tikzpicture}
+                    \begin{axis}[
+                            title={Characteristic curve of D element},
+                            xlabel={$V_D$},
+                            ylabel={$I_D$},
+                            xmin=-6, xmax=6,
+                            ymin=-6, ymax=6,
+                            % 
+                            xtick={-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6},
+                            ytick={-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6},
+                            legend pos=north west,
+                            ymajorgrids=true,
+                            grid style=dashed,
+                        ]
+                        \addplot[
+                            color=blue,
+                            mark=square,
+                        ]
+                        coordinates {
+                                (-5.02,-5.00)
+                                (-2.54,-2.52)
+                                (-1.26,-1.25)
+                                (0,0)
+                                (1.26,1.26)
+                                (2.54,2.52)
+                                (5.04,5.00)
+                            };
+                    \end{axis}
+                \end{tikzpicture}
+            \end{figure}
+
+
+
         }
     \end{subquestion}
 
@@ -303,6 +399,45 @@
                 \caption{First image is for D and $2.5V$, second image is for r and $2.5V$. \\
                     \hspace*{14mm} Third image is for D and $-2.5V$, last image is for r and $-2.5V$.}
             \end{figure}
+
+
+            Similar to previous part, we can plot the characteristic curve of the D element in the
+            same way.
+            It will look like:
+            \begin{figure}[H]
+                \centering
+                \begin{tikzpicture}
+                    \begin{axis}[
+                            title={Characteristic curve of D element},
+                            xlabel={$V_D$},
+                            ylabel={$I_D$},
+                            xmin=-11, xmax=11,
+                            ymin=-11, ymax=11,
+                            % 
+                            xtick={-11, -7 , -3, 0, 3, 7, 11},
+                            ytick={-11, -7 , -3, 0, 3, 7, 11},
+                            legend pos=north west,
+                            ymajorgrids=true,
+                            grid style=dashed,
+                        ]
+                        \addplot[
+                            color=blue,
+                            mark=square,
+                        ]
+                        coordinates {
+                                (-1.89,0.6)
+                                (-4.3,-0.6)
+                                (-9.2,0.69)
+                                (0,0)
+                                (-0.02,2.53)
+                                (-0.001,5.6)
+                                (-0.001,10.0)
+                            };
+
+                    \end{axis}
+                \end{tikzpicture}
+            \end{figure}
+
 
         }
     \end{subquestion}
@@ -420,7 +555,27 @@
 
     %--------------------------------------------
     \begin{subquestion}{Use the developed code to plot sample Lissajous curves for various values of $A_x$, $A_y$, $\omega_x$, $\omega_y$, $\theta_x$, and $\theta_y$. }
-        \answer{}
+        \answer{
+            % \begin{lstlisting}[language=Python]
+            %     import numpy as np
+            %     import matplotlib.pyplot as plt
+
+            %     def lissajous_curve(Ax, Ay, wx, wy, thetax, thetay):
+            %         t = np.linspace(0, 2 * np.pi, 1000)
+            %         x = Ax * np.cos(wx * t + thetax)
+            %         y = Ay * np.cos(wy * t + thetay)
+            %         plt.plot(x, y)
+            %         plt.xlabel('Vx')
+            %         plt.ylabel('Vy')
+            %         plt.title('Lissajous curve')
+            %         plt.show()
+
+            %     lissajous_curve(1, 1, 1, 2, 0, 0)
+            %     lissajous_curve(1, 1, 2, 3, 0, 0)
+
+            % \end{lstlisting}
+
+        }
     \end{subquestion}
 
     %--------------------------------------------
