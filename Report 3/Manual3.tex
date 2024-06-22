@@ -22,6 +22,10 @@
 \usepackage{float}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{matlab-prettifier}
+\usepackage{listings}
 
 %\usepackage[printwatermark]{xwatermark}
 %\newwatermark[allpages,color=gray!50,angle=45,scale=2.5,xpos=-5,ypos=-5]{Mohammad Hadi}
@@ -345,6 +349,11 @@
 
 
 
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/1000.jpeg}
+                \caption{ A photo of captured resistor curve and its circuit.}
+            \end{figure}
         }
     \end{subquestion}
 
@@ -425,9 +434,9 @@
                             mark=square,
                         ]
                         coordinates {
-                                (-1.89,0.6)
-                                (-4.3,-0.6)
                                 (-9.2,0.69)
+                                (-4.3,-0.6)
+                                % (-1.89,0.6)
                                 (0,0)
                                 (-0.02,2.53)
                                 (-0.001,5.6)
@@ -436,6 +445,16 @@
 
                     \end{axis}
                 \end{tikzpicture}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/42.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/43.jpeg}
+                \caption{The oscilloscope showing diode characteristic curve.}
             \end{figure}
 
 
@@ -464,50 +483,66 @@
     %--------------------------------------------
     \begin{subquestion}{How can the displayed Lissajous curve be used
             to obtain the characteristic curve of a resistive element?}
-        \answer{}
+        \answer{
+            The Lissajous curve is a curve that is obtained by plotting the
+            voltage of one element versus the voltage of another element.
+            The slope of the curve is the ratio of the two voltages.
+            The characteristic curve of a resistive element can be obtained by
+            plotting the voltage of the resistive element versus
+            the current flowing through it.In this circuit the first output
+            shows the desired voltage of the element. Since the left side (resistor and D element)
+            is parallel to the right side (resistor and D element), the right output
+            is equivalent to the current flowing through the element.
+            So the Lissajous curve can be used to obtain the characteristic
+            curve of a resistive element.
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Can the characteristic curve be extracted using the circuit of Fig. \ref{fig:cir2} and an oscilloscope? }
-        \answer{}
-    \end{subquestion}
-
-    %--------------------------------------------
-    \begin{subquestion}{Replace $D$ with a $1$ k$\Omega$ resistor and see the corresponding characteristic curve on the oscilloscope screen.}
         \answer{
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/1000.jpeg}
-                \caption{A photo of all the setup and I don't have any idea why should i put it here just because my friend i guess said and I don't know whatever I don't care about my life anymore and I wish I die as soon as possible and also it doesn't mean that I don't trust him I just didn't think at the first that putting photos makes any sense otherwise his comments and ideas are wonderful Edit: now I saw that this photo is very cute and I took a perfect photo which meets high standards just look at the fancy background of this masterpease(I donno the right spell of that word) and how that beautiful Harry Potter pencil case matches the rest of setup and the position of probes and the color difference between them and the perfect line on the screen which I prefer diode characteristic curve because it's more complicated and matches with Electrical engineering.}
-            \end{figure}
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/40.jpeg}
-                \caption{The circuit.}
-            \end{figure}
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/41.jpeg}
-                \caption{The oscilloscope showing resistor characteristic curve.}
-            \end{figure}
+            yes, same as the previous question, if the value of
+            the D element is equal to r resistor, the characteristic curve
+            can be extracted using the circuit of Fig. \ref{fig:cir2} and an oscilloscope.
         }
     \end{subquestion}
 
     %--------------------------------------------
-    \begin{subquestion}{Repeat the previous part for a diode.}
-        \answer{
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/42.jpeg}
-                \caption{The circuit.}
-            \end{figure}
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/43.jpeg}
-                \caption{The oscilloscope showing diode characteristic curve.}
-            \end{figure}
-        }
-    \end{subquestion}
+    % \begin{subquestion}{Replace $D$ with a $1$ k$\Omega$ resistor and see the corresponding characteristic curve on the oscilloscope screen.}
+    %     \answer{
+    %         \begin{figure}[H]
+    %             \centering
+    %             \includegraphics[scale=\PicScale,angle=0]{Fig/1000.jpeg}
+    %             \caption{A photo of all the setup and I don't have any idea why should i put it here just because my friend i guess said and I don't know whatever I don't care about my life anymore and I wish I die as soon as possible and also it doesn't mean that I don't trust him I just didn't think at the first that putting photos makes any sense otherwise his comments and ideas are wonderful Edit: now I saw that this photo is very cute and I took a perfect photo which meets high standards just look at the fancy background of this masterpease(I donno the right spell of that word) and how that beautiful Harry Potter pencil case matches the rest of setup and the position of probes and the color difference between them and the perfect line on the screen which I prefer diode characteristic curve because it's more complicated and matches with Electrical engineering.}
+    %         \end{figure}
+    %         \begin{figure}[H]
+    %             \centering
+    %             \includegraphics[scale=\PicScale,angle=0]{Fig/40.jpeg}
+    %             \caption{The circuit.}
+    %         \end{figure}
+    %         \begin{figure}[H]
+    %             \centering
+    %             \includegraphics[scale=\PicScale,angle=0]{Fig/41.jpeg}
+    %             \caption{The oscilloscope showing resistor characteristic curve.}
+    %         \end{figure}
+    %     }
+    % \end{subquestion}
+
+    %--------------------------------------------
+    % \begin{subquestion}{Repeat the previous part for a diode.}
+    %     \answer{
+    %         \begin{figure}[H]
+    %             \centering
+    %             \includegraphics[scale=\PicScale,angle=0]{Fig/42.jpeg}
+    %             \caption{The circuit.}
+    %         \end{figure}
+    %         \begin{figure}[H]
+    %             \centering
+    %             \includegraphics[scale=\PicScale,angle=0]{Fig/43.jpeg}
+    %             \caption{The oscilloscope showing diode characteristic curve.}
+    %         \end{figure}
+    %     }
+    % \end{subquestion}
 
 
 \end{question}
@@ -528,17 +563,84 @@
 
     %--------------------------------------------
     \begin{subquestion}{Assume that the sinusoidal voltage $v_C(t)=A\cos(\omega t+\theta)$ is applied to the capacitor. Find the corresponding capacitor current $i_C(t)$ for ideal values of $R_{EPR}$, $R_{ESR}$, and $L_{ESL}$ and show that it has sinusoidal form.}
-        \answer{}
+        \answer{
+            For an ideal capacitor, the current \( i_C(t) \) is related to the voltage \( v_C(t) \) by the equation:
+            \[
+                i_C(t) = C \frac{d v_C(t)}{dt}
+            \]
+
+            Given \( v_C(t) = A \cos(\omega t + \theta) \), we can find the derivative:
+            \[
+                \frac{d v_C(t)}{dt} = -A \omega \sin(\omega t + \theta)
+            \]
+
+            Substituting this derivative into the equation for \( i_C(t) \), we get:
+            \[
+                i_C(t) = C \frac{d v_C(t)}{dt} = -A \omega C \sin(\omega t + \theta)
+            \]
+
+            Using the trigonometric identity \( \sin(x) = \cos(x - \frac{\pi}{2}) \), we can rewrite the equation as:
+            \[
+                i_C(t) = -A \omega C \cos\left(\omega t + \theta - \frac{\pi}{2}\right)
+            \]
+
+            Therefore, the current \( i_C(t) \) has a sinusoidal form:
+            \[
+                i_C(t) = A \omega C \cos\left(\omega t + \theta - \frac{\pi}{2}\right)
+            \]
+
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Use PSpice AC sweep analysis to plot the amplitude and phase of the capacitor current versus $f=\frac{\omega}{2\pi}$ when the capacitor voltage is $v_C(t)=\cos(\omega t+\theta)$ and $R_{EPR}$, $R_{ESR}$, and $L_{ESL}$ have ideal values.}
-        \answer{}
+        \answer{
+
+            Here is how the circuit looks like in PSpice:
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.35,angle=0]{Fig/Q8.png}
+                \caption{The circuit in PSpice.}
+            \end{figure}
+
+            The output of the simulation is:
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.35,angle=0]{Fig/Q8_1.png}
+                \caption{The output of the simulation.}
+            \end{figure}
+        }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Use PSpice parametric analysis to plot the amplitude and phase of the capacitor current versus $f=\frac{\omega}{2\pi}$ for the capacitor voltage $v_C(t)=\cos(\omega t+\theta)$ and different suitably selected values of $R_{EPR}$, $R_{ESR}$, and $L_{ESL}$. Discuss how the parasitic parameters $R_{EPR}$, $R_{ESR}$, and $L_{ESL}$ affect the performance of the capacitor. }
-        \answer{}
+        \answer{
+            Here is how the circuit looks like in PSpice:
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.35,angle=0]{Fig/Q7_2.png}
+                \caption{The circuit in PSpice.}
+            \end{figure}
+
+            The output of the simulation is:
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.35,angle=0]{Fig/Q7_3.png}
+                \caption{The output of the simulation.}
+            \end{figure}
+
+            It can be observed that the parasitic parameters \( R_{EPR} \), \( R_{ESR} \), and \( L_{ESL} \) have a significant impact on the performance of the capacitor.
+            These parasitic parameters introduce additional resistance and inductance to the circuit,
+            which can affect the behavior of the capacitor.
+            For example, the presence of resistance can lead to energy
+            losses and reduce the efficiency of the capacitor.
+            Similarly, the presence of inductance can introduce
+            impedance to the circuit, affecting the current
+            flow and the phase relationship between the voltage and current.
+            Therefore, it is important to consider these parasitic parameters
+            when designing and analyzing circuits involving capacitors to
+            ensure optimal performance and accuracy.
+        }
     \end{subquestion}
 
 \end{question}
@@ -550,37 +652,52 @@
 %----------------------------------------------------------------------------------------
 \begin{question}
 
-    \questiontext{Write a MATLAB/Python code to plot the Lissajous curve corresponding to the voltage signals $v_x(t)=A_x\cos(\omega_x t+\theta_x)$ and $v_y(t)=A_y\cos(\omega_y t+\theta_y)$.
-    }
+    \questiontext{Write a MATLAB/Python code to plot the Lissajous curve corresponding to the voltage signals $v_x(t)=A_x\cos(\omega_x t+\theta_x)$ and $v_y(t)=A_y\cos(\omega_y t+\theta_y)$.}
 
     %--------------------------------------------
     \begin{subquestion}{Use the developed code to plot sample Lissajous curves for various values of $A_x$, $A_y$, $\omega_x$, $\omega_y$, $\theta_x$, and $\theta_y$. }
         \answer{
-            % \begin{lstlisting}[language=Python]
-            %     import numpy as np
-            %     import matplotlib.pyplot as plt
 
-            %     def lissajous_curve(Ax, Ay, wx, wy, thetax, thetay):
-            %         t = np.linspace(0, 2 * np.pi, 1000)
-            %         x = Ax * np.cos(wx * t + thetax)
-            %         y = Ay * np.cos(wy * t + thetay)
-            %         plt.plot(x, y)
-            %         plt.xlabel('Vx')
-            %         plt.ylabel('Vy')
-            %         plt.title('Lissajous curve')
-            %         plt.show()
+            The Matlab code:
+            \lstinputlisting[style=Matlab-Pyglike]{code/one.m}
 
-            %     lissajous_curve(1, 1, 1, 2, 0, 0)
-            %     lissajous_curve(1, 1, 2, 3, 0, 0)
+            The result of the code (for entries which are shown in the code):
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.8,angle=0]{Fig/Q7.png}
+                \caption{The Lissajous curve.}
+            \end{figure}
 
-            % \end{lstlisting}
 
         }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Assume that $\frac{\omega_x}{\omega_y}=\frac{m}{n}$, where $\frac{m}{n}$ is a fractional number. Discuss how the ratio $\frac{\omega_x}{\omega_y}$ can be found from the corresponding Lissajous curve?}
-        \answer{}
+        \answer{
+            When the ratio of the angular frequencies, \(\frac{\omega_x}{\omega_y}\), is a fractional number, the resulting Lissajous curve provides a visual representation of this ratio. The Lissajous curve is formed by plotting the voltage signals \(v_x(t)\) and \(v_y(t)\) as a parametric curve in the xy-plane.
+
+            Specifically, when \(\frac{\omega_x}{\omega_y} = 1\), the Lissajous curve takes the shape of an ellipse. This ellipse can degenerate
+            into a line when the phase difference
+            between the two signals, \(\theta_x - \theta_y\), is zero.
+
+            When \(\frac{\omega_x}{\omega_y} = 2\), the Lissajous
+            curve forms a figure-eight pattern. This pattern occurs
+            when the two signals have a phase difference
+            of \(\frac{\pi}{2}\).
+
+            In general, for \(\frac{\omega_x}{\omega_y} = \frac{m}{n}\),
+            where \(m\) and \(n\) are integers, the Lissajous
+            curve will have \(m\) horizontal lobes and \(n\)
+            vertical lobes. The lobes represent the number of
+            times the curve intersects the x-axis and y-axis,
+            respectively.
+
+            By visually inspecting the Lissajous curve and
+            counting the number of lobes, one can determine
+            the ratio \(\frac{\omega_x}{\omega_y}\) and gain
+            insights into the relationship between the two signals.
+        }
     \end{subquestion}
 
 \end{question}

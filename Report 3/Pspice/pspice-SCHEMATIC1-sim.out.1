@@ -1,0 +1,42 @@
+
+**** 06/22/24 21:16:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ I:\EE\semester_2\circuits\Lab\EC_report-main\Report 3\Pspice\pspice-SCHEMATIC1-sim.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pspice-SCHEMATIC1-sim.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of E:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10000 1 1M
+----------------$
+ERROR -- Invalid value
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\pspice-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING pspice-SCHEMATIC1.net ****
+* source PSPICE
+C_C1         N00091 N00118  1  
+R_R1         N00091 N00118  10M  
+R_R2         N00118 N00177  1n  
+L_L1         N00177 0  1nH  
+V_V2         N00091 0 DC 0Vdc AC 1V 
+
+**** RESUMING pspice-SCHEMATIC1-sim.sim.cir ****
+.END
+

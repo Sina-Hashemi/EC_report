@@ -1,0 +1,43 @@
+
+**** 06/22/24 19:20:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-sim1"  [ I:\EE\semester_2\circuits\Lab\EC_report-main\Report 5\Pspice\sim-SCHEMATIC1-sim1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim-SCHEMATIC1-sim1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of E:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V2 -200 200 2 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\sim-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING sim-SCHEMATIC1.net ****
+* source SIM
+D_D2         N00260 N00488 D1N4148 
+V_V2         N00461 0 1Vdc
+V_0_0_7         N00260 N00461 0.7Vdc
+R_R2         0 N00488  1k  
+V_-10         N00434 N00461 -10Vdc
+D_D2         N00434 N00488 D1N4148 
+$
+ERROR -- Name "D_D2" is defined more than once
+
+**** RESUMING sim-SCHEMATIC1-sim1.sim.cir ****
+.END
+

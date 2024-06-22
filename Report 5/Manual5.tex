@@ -20,7 +20,11 @@
 
 \documentclass[11pt]{article}
 \usepackage{float}
-
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{matlab-prettifier}
+\usepackage{listings}
 % \usepackage[printwatermark]{xwatermark}
 % \newwatermark[allpages,color=gray!50,angle=45,scale=2.5,xpos=-5,ypos=-5]{Mohammad Hadi}
 
@@ -84,7 +88,7 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/3.jpeg}
-                \caption{...}
+                % \caption{...}
             \end{figure}
         }
     \end{subquestion}
@@ -95,7 +99,7 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/4.jpeg}
-                \caption{...}
+                % \caption{...}
             \end{figure}
         }
     \end{subquestion}
@@ -106,8 +110,15 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/5.jpeg}
-                \caption{...}
+                % \caption{...}
             \end{figure}
+            to verify the superposition theorem, we can use the following equation:
+            \begin{equation*}
+                v_3 = v_{s1} + v_{s2} = 2.10 + 4.07 = 6.07 \text{ V}
+            \end{equation*}
+            the direct measure of $v_3$ shows $6.15 V$. So superposition is held in this case, but
+            there is about $1.3\%$ error in the measurement.
+
         }
     \end{subquestion}
 
@@ -132,7 +143,16 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/11.jpeg}
                 \caption{$v_{s1}$ on and $v_{s2}(t)$ on.}
             \end{figure}
+
+            to verfy superposition, we can use the following equation:
+            \begin{equation*}
+                v_3 = v_{s1} + v_{s2} = 1.98 - 0.02 = 1.96 \text{ V}
+            \end{equation*}
+            the direct measure of $v_3$ shows $1.95 V$. So superposition is held in this case, but
+            there is about $0.5\%$ error in the measurement.
         }
+
+
     \end{subquestion}
 
     %--------------------------------------------
@@ -158,6 +178,10 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/15.jpeg}
                 \caption{$v_{s1}$ on and $v_{s2}(t)$ on.}
             \end{figure}
+
+            Since diode is considered as a non-linear element,
+            the superposition theorem is not held in this case and
+            $v_3$ is not equal to the sum of $v_{s1}$ and $v_{s2}$.
         }
     \end{subquestion}
 
@@ -184,7 +208,7 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/16.jpeg}
-                \caption{...}
+                % \caption{...}
             \end{figure}
         }
     \end{subquestion}
@@ -195,7 +219,7 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/17.jpeg}
-                \caption{...}
+                % \caption{...}
             \end{figure}
         }
     \end{subquestion}
@@ -203,11 +227,25 @@
     %--------------------------------------------
     \begin{subquestion}{Can you obtain the corresponding Thevenin equivalent circuit using the measured values of $V_{oc}$ and $V_L$.}
         \answer{
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/123456789.jpeg}
-                \caption{its just for you to help you to write this part. delete it in final version.}
-            \end{figure}
+            % \begin{figure}[H]
+            %     \centering
+            %     \includegraphics[scale=\PicScale,angle=0]{Fig/123456789.jpeg}
+            %     \caption{its just for you to help you to write this part. delete it in final version.}
+            % \end{figure}
+
+            Considering a series circuit which contains voltage source $V_{oc}$ , $R_{eq}$
+            and $R_L$, the relation between variables of this circuit and the original circuit is:
+            \begin{equation*}
+                V_{oc} = V_{1} \quad V_{L} = \frac{R_L}{R_{eq}+R_L} \times V_{oc} \quad I_{sc} = \frac{V_{oc}}{R_{eq}}
+            \end{equation*}
+
+            Using the equations, since $V_{oc} = 5.14$ V and $V_{L} = 3.02$ V
+            and $R_L = 2.2$ k$\Omega$, we can find $R_{eq}$ as:
+            \begin{equation*}
+                R_{eq} = 1.56 \text{ k}\Omega
+            \end{equation*}
+            So the Thevenin equivalent circuit is a voltage source with $V_{oc} = 5.14$ V and
+            a resistor with $R_{eq} = 1.56$ k$\Omega$.
         }
     \end{subquestion}
 
@@ -224,6 +262,9 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/19.jpeg}
                 \caption{Voltage of the load resistor.}
             \end{figure}
+
+            The voltage of the load resistor is $3.00$ V which has a $0.7\%$ error.
+            This can be due to tolerances of the components (like resistors).
         }
     \end{subquestion}
 
@@ -263,6 +304,12 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/22.jpeg}
                 \caption{The exact value of $v$ of $R$.}
             \end{figure}
+
+            The power consumed will be maximum when $R_L = R_{eq} = 1.45$ k$\Omega$.
+            Using $\frac{V^2}{R}$ for calculation of power, we will have:
+            \begin{equation*}
+                P = \frac{v^2}{R} = \frac{2.51^2}{1.45} = 4.35 \text{ W}
+            \end{equation*}
         }
     \end{subquestion}
 
@@ -277,7 +324,7 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/24.jpeg}
-                \caption{The exact value of $v$ of $R$.}
+                \caption{The exact value of $v$ of $R=0.98k$.}
             \end{figure}
             \begin{figure}[H]
                 \centering
@@ -287,8 +334,20 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/26.jpeg}
-                \caption{The exact value of $v$ of $R$.}
+                \caption{The exact value of $v$ of $R = 2.15k$.}
             \end{figure}
+
+            calculating the power for these two resistors, we have:
+            \begin{equation*}
+                P_{1k} = \frac{v^2}{R} = \frac{2.06^2}{0.98} = 4.32 \text{ W}
+            \end{equation*}
+            \begin{equation*}
+                P_{2.2k} = \frac{v^2}{R} = \frac{2.97^2}{2.15} = 4.11 \text{ W}
+            \end{equation*}
+            as can be seen, the power consumed by the $1$ k$\Omega$ resistor is $4.32$ W and
+            the power consumed by the $2.2$ k$\Omega$ resistor is $4.11$ W which both are less
+            than the maximum power of $4.35$ W.
+            So the maximum power transfer theorem is verified.
         }
     \end{subquestion}
 
@@ -310,7 +369,79 @@
         \caption{Typical characteristic of a Zener diode.} \label{fig:zener}
     \end{figure}
 
-    \answer{}
+    \answer{
+        The Zener diode can be used as a voltage regulator to provide a stable reference
+        voltage. This is achieved by operating the Zener diode in its reverse breakdown
+        region. When the reverse voltage applied to the Zener diode exceeds
+        the Zener breakdown voltage \( V_Z \), the diode conducts and maintains
+        a constant voltage \( V_Z \) across its terminals.
+        Consider a circuit where a Zener diode is connected in parallel with the
+        load resistor \( R_L \) and a series resistor \( R_s \) is placed
+        between the supply voltage \( V_s \) and the Zener diode.
+        The supply voltage \( V_s \) must be greater than the Zener voltage
+        \( V_Z \) for the Zener diode to regulate the voltage.
+        The current through the series resistor \( R_s \) is given by:
+
+        \[
+            I_s = \frac{V_s - V_Z}{R_s}
+        \]
+
+        The current through the load resistor \( R_L \) is:
+
+        \[
+            I_L = \frac{V_Z}{R_L}
+        \]
+
+        The Zener current \( I_Z \), which is the current flowing through the Zener diode, is:
+
+        \[
+            I_Z = I_s - I_L = \frac{V_s - V_Z}{R_s} - \frac{V_Z}{R_L}
+        \]
+
+        For proper operation, the Zener current \( I_Z \) must be within the specified limits of the Zener diode. The Zener diode will maintain a constant voltage \( V_Z \) as long as \( I_Z \) remains within these limits.
+
+        There are several practical and analytical limitations to
+        consider when using a Zener diode as a voltage source:
+
+        1. \textbf{Power Dissipation:}
+        The Zener diode must be able to dissipate the power generated by the Zener current. The power dissipated by the Zener diode \( P_Z \) is:
+
+        \[
+            P_Z = V_Z \cdot I_Z
+        \]
+
+        Ensure that \( P_Z \) does not exceed the maximum power rating of the Zener diode.
+
+        2. \textbf{Current Limitations:}
+        The series resistor \( R_s \) must be chosen to ensure that the Zener current \( I_Z \) remains within the specified operating range of the Zener diode. If the Zener current is too low, the Zener diode may not maintain the voltage regulation. If the Zener current is too high, the diode may overheat and fail.
+
+        3. \textbf{Supply Voltage and Load Variations:}
+        The supply voltage \( V_s \) must be sufficiently higher than the Zener voltage \( V_Z \) to maintain regulation. Variations in \( V_s \) can affect the current through the Zener diode and potentially impact voltage regulation.
+
+        4. \textbf{Load Variations:}
+        Changes in the load resistance \( R_L \) will affect the load current \( I_L \).
+        The series resistor \( R_s \) must be sized to accommodate the expected range of load
+        variations while keeping the Zener current \( I_Z \) within the safe operating region. \\
+
+        It's also important to point Zener effect.The Zener effect is
+        a type of electrical breakdown that occurs in a reverse biased
+        p-n junction when the electric field enables tunneling of
+        electrons from the valence to the conduction band of a
+        semiconductor, leading to numerous free minority carriers.
+        When the reverse voltage applied to the Zener diode reaches
+        the Zener voltage, these carriers are accelerated enough to
+        create additional carriers through collisions with bound
+        electrons, causing a rapid increase in current, while the
+        voltage across the diode remains approximately constant.
+        This constant voltage,
+        even in the face of large changes in current, is what makes the Zener diode useful as a voltage regulator.
+
+        In summary, a Zener diode can be effectively used as a voltage source to
+        provide a stable reference voltage,
+        but it is essential to consider power dissipation, current limitations,
+        and variations in supply voltage and load to ensure reliable operation.
+
+    }
 
 \end{question}
 %----------------------------------------------------------------------------------------
@@ -323,21 +454,92 @@
     %---------------------------------------------------------------------------------------
     \begin{subquestion}{Propose a piecewise linear approximation for the characteristic curve using vertical and/or horizontal lines. The forward and (Zener) breakdown voltages should be included in the approximation. }
 
-        \answer{}
+        \answer{
+            To propose a piecewise linear approximation for the characteristic curve of a Zener diode, we can approximate the curve using vertical and horizontal lines that represent the forward and breakdown voltages. The key points to consider are the forward voltage \( V_F \) and the Zener breakdown voltage \( V_Z \).
+
+            1. \textbf{Forward Bias Region:}
+            - For \( U > V_F \), the diode conducts and we approximate it with a horizontal line at the forward voltage \( V_F \) (typically 0.7V for a silicon diode).
+
+            2. \textbf{Reverse Breakdown Region:}
+            - For \( U < -V_Z \), the Zener diode enters breakdown and we approximate it with a horizontal line at the Zener voltage \( V_Z \) (e.g., -10V).
+
+            3. \textbf{Non-Conducting Region:}
+            - For \( -V_Z < U < V_F \), the diode does not conduct, and we approximate it with a vertical line at zero current.
+
+            The piecewise linear approximation can be expressed as:
+            \[
+                I(U) =
+                \begin{cases}
+                    I_{F}  & \text{for } U \geq V_F     \\
+                    0      & \text{for } -V_Z < U < V_F \\
+                    -I_{Z} & \text{for } U \leq -V_Z
+                \end{cases}
+            \]
+
+            Where \( I_F \) is the current in the forward bias and \( I_Z \) is the Zener current in breakdown.
+
+        }
 
     \end{subquestion}
 
     %----------------------------------------------------------------------------------------
     \begin{subquestion}{Use the proposed piecewise linear approximation to suggest a model for the Zener diode. You may use ideal diodes, independent sources, or passive LTI resistors in your model. }
 
-        \answer{}
+        \answer{
+            Using the piecewise linear approximation from part (a), we can suggest a model for the Zener diode using ideal diodes, independent sources, and passive LTI resistors.
+
+            1. \textbf{Forward Bias Model:}
+            - An ideal diode in series with a voltage source \( V_F \) (0.7V) represents the forward bias region.
+
+            2. \textbf{Reverse Breakdown Model:}
+            - An ideal diode in series with a voltage source \( V_Z \) (-10V) represents the breakdown region. This series combination is placed in parallel with the forward bias model.
+
+            3. \textbf{Non-Conducting Region:}
+            - This region is represented by an open circuit (no current flow).
+
+            The equivalent circuit model for the Zener diode is thus composed of:
+            - An ideal diode \( D_1 \) in series with a voltage source \( V_F \).
+            - A second ideal diode \( D_2 \) in series with a voltage source \( V_Z \) placed in reverse bias.
+
+            The model can be represented as:
+
+            \[
+                \begin{cases}
+                    D_1 + V_F & \text{for forward bias}      \\
+                    D_2 + V_Z & \text{for reverse breakdown}
+                \end{cases}
+            \]
+
+            Where \( D_1 \) and \( D_2 \) are ideal diodes.
+        }
 
     \end{subquestion}
 
     %----------------------------------------------------------------------------------------
     \begin{subquestion}{Use PSpice simulation to verify the accuracy of the suggested model for D02CZ10 zener diode with the forward and breakdown voltages around $0.7$ and $-10$ V. }
 
-        \answer{}
+        \answer{To verify the accuracy of the suggested model for the D02CZ10 Zener diode with forward and breakdown voltages around 0.7V and -10V, respectively, we can use PSpice simulation.
+
+
+            The model in PSpice looks like:
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.35,angle=0]{Fig/Q5_1.png}
+                \caption{circuit in PSpice}
+            \end{figure}
+
+            and here is the output of the simulation:
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.35,angle=0]{Fig/Q5_2.png}
+                \caption{simulation results}
+            \end{figure}
+
+            Also, here is the desired Matlab code for the simulation:
+            \lstinputlisting[style=Matlab-Pyglike]{code/one.m}
+            
+
+        }
 
     \end{subquestion}
 

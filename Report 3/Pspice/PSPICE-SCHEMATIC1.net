@@ -1,0 +1,6 @@
+* source PSPICE
+C_C1         N00091 N00118  1  
+R_R1         N00091 N00118  1k  
+R_R2         N00118 N00177  1k  
+L_L1         N00177 0  1H  
+V_V2         N00091 0 DC 0Vdc AC 1V 

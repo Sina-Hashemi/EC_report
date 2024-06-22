@@ -19,8 +19,10 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt]{article}
+\usepackage{verbatim}
 \usepackage{float}
-
+\usepackage{matlab-prettifier}
+\usepackage{listings}
 %\usepackage[printwatermark]{xwatermark}
 %\newwatermark[allpages,color=gray!50,angle=45,scale=2.5,xpos=-5,ypos=-5]{Mohammad Hadi}
 
@@ -76,7 +78,8 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/3.jpeg}
                 \caption{$v_1$ and $v_2$ measured by multimeter.}
             \end{figure}
-
+            $v_1$ + $v_2$ = 3.35 + 1.67 = 5.02 V, compared to $v_s$ = 5.00 V ,
+            the error is 0.02 V.
         }
     \end{subquestion}
 
@@ -90,6 +93,15 @@
                 \includegraphics[scale=0.08,angle=0]{Fig/6.jpeg}
                 \caption{$R_1$, $R_2$ and $R_3$ for calculating $i$.}
             \end{figure}
+            Since the current identifier of the multimeter is not working, we cannot measure the current directly. However, we can calculate it using Ohm's law.
+
+            \[
+                i_1 = \frac{v_1}{R_1} = \frac{3.35}{1.012} = 3.31 \, \text{mA}, \quad
+                i_2 = \frac{v_2}{R_2} = \frac{1.67}{1.018} = 1.64 \, \text{mA}, \quad
+                i_3 = \frac{v_3}{R_3} = \frac{1.67}{1.016} = 1.64 \, \text{mA}
+            \]
+
+            So, we have $i_1 = i_2 + i_3 = 3.31 \, \text{mA} = 1.64 \, \text{mA} + 1.64 \, \text{mA} = 3.28 \, \text{mA}$. The error is 0.03 \, \text{mA}.
 
         }
     \end{subquestion}
@@ -102,6 +114,7 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/7.jpeg}
                 \caption{the direction of the polarity of the voltage $v_3$ reversed.}
             \end{figure}
+            The results are the same as the previous parts. The error is 0.03 \, \text{mA}.
 
         }
     \end{subquestion}
@@ -116,6 +129,9 @@
                 \caption{$v_1$ and $v_2$ measured by multimeter.}
             \end{figure}
 
+            $v_1$ + $v_2$ = 3.35 + 1.67 = 5.02 V, compared to $v_s$ = 5.00 V ,
+            the error is 0.02 V.
+
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=0.08,angle=0]{Fig/10.jpeg}
@@ -124,11 +140,22 @@
                 \caption{$R_1$, $R_2$ and $R_3$ for calculating $i$.}
             \end{figure}
 
+            \[
+                i_1 = \frac{v_1}{R_1} = \frac{3.35}{9.89} = 0.34 \, \text{mA}, \quad
+                i_2 = \frac{v_2}{R_2} = \frac{1.67}{9.80} = 0.17 \, \text{mA}, \quad
+                i_3 = \frac{v_3}{R_3} = \frac{1.67}{9.85} = 0.17 \, \text{mA}
+            \]
+
+            So, we have $i_1 = i_2 + i_3 = 0.34$ \, \text{mA} = 0.17 \, \text{mA} + 0.17 \, 
+            \text{mA} = 0.34 \, \text{mA}. The error is 0.00 \, \text{mA}.
+
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/13.jpeg}
                 \caption{the direction of the polarity of the voltage $v_3$ reversed.}
             \end{figure}
+
+            The results are the same as the previous parts. The error is 0.00 \, \text{mA}.
 
         }
     \end{subquestion}
@@ -169,6 +196,8 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/17.jpeg}
                 \caption{oscilloscopes.}
             \end{figure}
+
+            as can be seen the KCL is verified graphically.
         }
     \end{subquestion}
 
@@ -181,6 +210,7 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/19.jpeg}
                 \caption{oscilloscopes.}
             \end{figure}
+            as can be seen the KCL is verified graphically.
         }
     \end{subquestion}
 
@@ -220,7 +250,9 @@
     \questiontext{Write a MATLAB/Python code that receives the data set $(x_i,y_i), i=1,\cdots,n$ and determines the optimal coefficients of the linear curve $y=ax+b$ that fits the data set with the least square error $\epsilon=\sum_{i=1}^n(y_i-ax_i-b)^2$.
     }
 
-    \answer{}
+    \answer{
+        \lstinputlisting[style=Matlab-Pyglike]{code/zero.m}
+    }
 
 \end{question}
 
@@ -287,7 +319,17 @@
         \caption{Measured voltages and currents for an LTI resistor.}\label{tab:Q1}
     \end{table}
 
-    \answer{}
+    \answer{
+        Here is the estimated characteristic curve of the resistor and its resistance:\\
+        The resistance of the resistor is 2218.80 Ohms (code output). \\
+        \begin{figure}[H]
+            \includegraphics[scale=0.70,angle=0]{Fig/Q4_1.png}
+            \caption{The characteristic curve of the resistor.}
+        \end{figure}
+
+        The Matlab code used to estimate the characteristic curve of the resistor and its resistance is as follows:
+        \lstinputlisting[style=Matlab-Pyglike]{code/one.m}
+    }
 
 \end{question}
 
