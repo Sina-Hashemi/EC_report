@@ -77,14 +77,21 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/3.jpeg}
-                \caption{The capacitor charge and de-charge on oscilloscope's screen.}
+                \caption{The capacitor charge and discharge on oscilloscope's screen.}
             \end{figure}
+            As you can see, by connecting the current, the capacitor is charged and when the current is cut off, the capacitor is discharged.
             }
         \end{subquestion}
-        
+
         %--------------------------------------------
         \begin{subquestion}{Measure the time constant of the circuit and compare it to its analytical counterpart.}
-            \answer{
+        \answer{
+            The time required to reach approximately $63\%$ of the maximum capacitor voltage is one $\tau$. So $\tau \cong 400m$. \\
+            If we calculate the time constant using analytical methods, we need to calculate $R_{eq}C$. So:
+            \[
+                \tau_{analytical} = R_{eq}C = 50k \cdot 10\mu = 500m
+            \]
+            As expected, The two analytical and practical values are close.
         }
     \end{subquestion}
 
@@ -94,8 +101,11 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/4.jpeg}
-                \caption{The capacitor charge and de-charge on oscilloscope's screen.}
+                \caption{The capacitor charge and discharge on oscilloscope's screen.}
             \end{figure}
+            The time required to reach approximately $63\%$ of the maximum capacitor voltage is one $\tau$. So $\tau \cong 500m$. \\
+            If we compare this number to $\tau_{analytical}$, the analytical value and the practical value are the same. \\
+            As we expected, the time constant is independent of the voltage.
         }
     \end{subquestion}
 
@@ -129,6 +139,14 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/6.jpeg}
                 \caption{The oscilloscope's screen.}
             \end{figure}
+
+            Due to the presence of the capacitor, the circuit resists sudden changes, so when the square voltage changes, the circuit voltage changes smoothly. \\
+            The time required to reach approximately $63\%$ of the maximum capacitor voltage is one $\tau$. So $\tau \cong 130\mu$. \\
+            If we calculate the time constant using analytical methods, we need to calculate $R_{eq}C$. So:
+            \[
+                \tau_{analytical} = R_{eq}C = 10k \cdot 15n = 150\mu
+            \]
+            As expected, The two analytical and practical values are close.
         }
     \end{subquestion}
 
@@ -140,8 +158,13 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/9.png}
                 \includegraphics[scale=0.1,angle=0]{Fig/10.png}
                 \includegraphics[scale=0.1,angle=0]{Fig/11.png}
-                \caption{.}
+                \caption{Circuit response to multiple input frequencies.}
             \end{figure}
+            First of all, you can see some phase difference between the input and output voltage, which shows that the voltage at the two ends of the capacitor has a leading load compared to the input of the circuit.
+            \[
+                H(j\omega) = \frac{y_C}{y_{in}} = \frac{\frac{1}{15n j\omega}}{10k + \frac{1}{15n j\omega}} = \frac{1}{150 \times 10^{-6} j\omega + 1} = a - bj\omega
+            \]
+            This circuit is a low-pass filter, and for this reason, as shown in the pictures, a lower voltage is passed for higher frequencies.
         }
     \end{subquestion}
 
@@ -175,6 +198,17 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/8.jpeg}
                 \caption{The oscilloscope's screen.}
             \end{figure}
+
+            When applying a positive voltage step initially, all the voltage is dropped across the resistor because the capacitor is empty. Gradually, the capacitor is charged and the voltage across it increases, and at the same time, the voltage across the resistor decreases. This process continues exponentially until the capacitor is fully charged. \\
+
+            When a negative voltage step is applied, the previously charged capacitor must discharge in the opposite direction. At this moment, the voltage across the resistor drops suddenly. Because the capacitor cannot change the voltage instantaneously, so at the moment the input changes, all the voltage change falls on the resistor. This causes the voltage across the resistance to suddenly reach a negative value. After this sudden decrease, the capacitor starts to discharge. As the capacitor discharges, the voltage across the resistor gradually increases (moves toward zero). \\
+
+            The time required to reach from maximum of the capacitor voltage to $0$ approximately $37\%$ is one $\tau$. So $\tau \cong 100\mu$.(Note that this descending part is not clear due to its smallness, so the obtained number is very imprecise) \\
+            If we calculate the time constant using analytical methods, we need to calculate $R_{eq}C$. So:
+            \[
+                \tau_{analytical} = R_{eq}C = 10k \cdot 15n = 150\mu
+            \]
+            As expected, The two analytical and practical values are close.
         }
     \end{subquestion}
 
@@ -186,8 +220,13 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/12.png}
                 \includegraphics[scale=0.1,angle=0]{Fig/13.png}
                 \includegraphics[scale=0.1,angle=0]{Fig/14.png}
-                \caption{.}
+                \caption{Circuit response to multiple input frequencies.}
             \end{figure}
+            First of all, you can see some phase difference between the input and output voltage, which shows that the voltage at the two ends of the resistor has a lagging load compared to the input of the circuit.
+            \[
+                H(j\omega) = \frac{y_C}{y_{in}} = \frac{10k}{10k + \frac{1}{15n j\omega}} = \frac{150 \times 10^{-6} j\omega}{150 \times 10^{-6} j\omega + 1} = -a + bj\omega
+            \]
+            This circuit is a low-pass filter, and for this reason, as shown in the pictures, a lower voltage is passed for higher frequencies.
         }
     \end{subquestion}
 
@@ -221,15 +260,16 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/16.png}
                 \includegraphics[scale=0.1,angle=0]{Fig/17.png}
                 \includegraphics[scale=0.1,angle=0]{Fig/18.png}
-                \caption{.}
+                \caption{Circuit response to multiple input frequencies}
             \end{figure}
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=0.1,angle=0]{Fig/19.jpeg}
                 \includegraphics[scale=0.1,angle=0]{Fig/20.jpeg}
                 \includegraphics[scale=0.1,angle=0]{Fig/21.jpeg}
-                \caption{.}
+                \caption{Volt/div has been reduced to better display the amount of passing voltage.}
             \end{figure}
+            As you can see, due to the fact that this is a bandpass filter, the voltage corresponding to the $1K$ frequency is better passed between the three frequencies, $100$, $1K$ and $11K$. (In the next three photos, the graph of all three states is zoomed, which shows that a small amount of voltage passes in each state)
         }
     \end{subquestion}
 
@@ -241,15 +281,18 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/22.png}
                 \includegraphics[scale=0.1,angle=0]{Fig/23.png}
                 \includegraphics[scale=0.1,angle=0]{Fig/24.png}
-                \caption{.}
+                \caption{Circuit response to multiple input frequencies}
             \end{figure}
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=0.1,angle=0]{Fig/25.jpeg}
                 \includegraphics[scale=0.1,angle=0]{Fig/26.jpeg}
                 \includegraphics[scale=0.1,angle=0]{Fig/27.jpeg}
-                \caption{.}
+                \caption{Volt/div has been reduced to better display the amount of passing voltage.}
             \end{figure}
+            Similar to the previous case, you can see that the filter passes the voltage related to the $1K$ frequency better. \\
+
+            In this case, by focusing on the voltage graphs, it can be seen that these passing frequencies have a sinusoidal state. The reason for this is that, based on the Fourier transform, a square wave is composed of several sine waves with different frequencies, so when this wave passes through a bandpass filter, the sine waves with low and high frequencies are attenuated. And sine waves with medium frequencies pass, and for this reason, the output wave has a sinusoidal shape.
         }
     \end{subquestion}
 
@@ -275,19 +318,72 @@
 
     %--------------------------------------------
     \begin{subquestion}{Calculate the frequency response of the active filter circuit.}
-        \answer{}
+        \answer{
+            The gain of the op-amp is K then the input voltage of the amplifier is $\frac{V_2}{K}$.
+            Now let's denote the node between $R_1 , R_3 , C_2$ as $V$. so, from the KCL:
+            \[
+                \begin{cases}
+                    \frac{V - V_1}{R_1} + C_2 j\omega (V - V_2) + \frac{V - \frac{V_2}{K}}{R_3} = 0 \\
+                    \frac{\frac{V_2}{K} - V}{R_3} + C_4 j\omega \frac{V_2}{K} = 0 \Rightarrow V = \frac{V_2}{K} + R_3 C_4 j\omega \frac{V_2}{K}
+                \end{cases}
+            \]
+            \[
+                \Rightarrow V_1 = 2V + R_1 R_3 C_2 j\omega (V - V_2) - \frac{V_2}{K} = 0
+            \]
+            \[
+                \Rightarrow V_1 = (\frac{V_2}{K} + R_3 C_4 j\omega \frac{V_2}{K})(2 + R_1 R_3 C_2 j\omega) - R_1 R_3 C_2 j\omega V_2 - \frac{V_2}{K}
+            \]
+            \[
+                H(j\omega) = \frac{V_2}{V_1} = \frac{1}{(\frac{1}{K} + \frac{R_3 C_4}{K} j\omega)(2 + R_1 R_3 C_2 j\omega) - R_1 R_3 C_3 j\omega - \frac{1}{K}}
+            \]
+        }
     \end{subquestion}
     %--------------------------------------------
     \begin{subquestion}{How can the amplifier part be implemented using op-amps?}
-        \answer{}
+        \answer{
+            We can implement the amplifier using an non-inverting op-amp circuit with gain K and by connecting GND leg of op-amp to negative node.
+        }
     \end{subquestion}
     %--------------------------------------------
     \begin{subquestion}{What are the advantages of the amplification part? Does it have any impact on the filtering response?}
-        \answer{}
+        \answer{
+            \paragraph*{The advantages of the amplification part:}
+            \begin{itemize}
+                \item Signal amplification: The amplifier can amplify the input signal, which is useful to compensate for the attenuation caused by the filter.
+                \item Isolation: The amplifier creates isolation between the input and output of the filter, which reduces the loading effect.
+                \item Low output impedance: The output of the amplifier has low impedance, which makes the filter able to withstand different loads without changing its performance.
+                \item Gain control: By adjusting the feedback resistors, the gain of the filter can be controlled.
+                \item Stability: The amplifier helps the stability of the circuit and prevents unwanted oscillations.
+            \end{itemize}
+            \paragraph*{Impacts of amplifier on filter behavior of the circuit:}
+            \begin{itemize}
+                \item Cutoff frequency: The amplifier can affect the cutoff frequency of the filter. By adjusting the gain of the amplifier, the cutoff frequency can be changed to some extent.
+                \item Quality factor (Q): Amplifier gain directly affects filter quality factor. Increasing the gain typically increases Q, which can lead to more resonance near the cutoff frequency.
+                \item Attenuation slope: The amplifier can affect the attenuation slope of the filter in the pass region. This is especially evident in higher order filters.
+                \item Phase response: The amplifier can apply additional phase delay to the signal, especially at higher frequencies. This phase delay can cause changes in the overall behavior of the filter.
+                \item Saturation: Non-linear operation of the amplifier (such as saturation points) can affect the overall response of the filter, especially for large-amplitude signals.
+                \item Bandwidth: Amplifier bandwidth limitations can limit the filter's frequency response at high frequencies.
+            \end{itemize}
+        }
     \end{subquestion}
     %--------------------------------------------
     \begin{subquestion}{What are the advantages and disadvantages of such an active filter?}
-        \answer{}
+        \answer{
+            \paragraph*{Advantages of Sallen active filters:}
+            \begin{itemize}
+                \item Simple design: They are relatively easy to design and implement.
+                \item Low cost: they use a small number of parts, which reduces the cost.
+                \item Flexibility: they can be used for different types of filters (low pass, high pass, intermediate pass).
+                \item Good performance in low to medium frequencies.
+            \end{itemize}
+            \paragraph*{Disadvantages of Sallen active filters:}
+            \begin{itemize}
+                \item Limitation on Q: High quality coefficients are difficult to achieve.
+                \item Sensitivity to component changes: filter performance can be affected by component tolerances.
+                \item Non-linearity: In some situations, they can show non-linear behavior.
+                \item Limitation at high frequencies: At high frequencies, their performance drops.
+            \end{itemize}
+        }
     \end{subquestion}
 
 \end{question}
@@ -315,11 +411,49 @@
 
     %--------------------------------------------
     \begin{subquestion}{Simulate the circuit in PSpice and investigate the filtering response of the circuit for various configurations of $Y_1$, $Y_2$, $Y_3$ and $Y_4$. Especially, demonstrate how the biquad filter can have lowpass, highpass, bandpass, and bandstop frequency responses.}
-        \answer{}
+        \answer{
+            \begin{figure}[H]
+                \begin{center}
+                    \includegraphics[scale=0.3]{Fig/Q6aa.png}
+                    \includegraphics[scale=0.25]{Fig/Q6ab.png}
+                    \caption{A bandpass filter designed using biquad filter.}
+                \end{center}
+            \end{figure}
+            \begin{figure}[H]
+                \begin{center}
+                    \includegraphics[scale=0.3]{Fig/Q6ba.png}
+                    \includegraphics[scale=0.25]{Fig/Q6bb.png}
+                    \caption{A bandstop filter designed using biquad filter.}
+                \end{center}
+            \end{figure}
+            \begin{figure}[H]
+                \begin{center}
+                    \includegraphics[scale=0.3]{Fig/Q6ca.png}
+                    \includegraphics[scale=0.25]{Fig/Q6cb.png}
+                    \caption{A highpass filter designed using biquad filter.}
+                \end{center}
+            \end{figure}
+            \begin{figure}[H]
+                \begin{center}
+                    \includegraphics[scale=0.3]{Fig/Q6da.png}
+                    \includegraphics[scale=0.25]{Fig/Q6db.png}
+                    \caption{A lowpass filter designed using biquad filter.}
+                \end{center}
+            \end{figure}
+        }
     \end{subquestion}
     %--------------------------------------------
     \begin{subquestion}{What is an all-pass filter and how can it be implemented using a biquad?}
-        \answer{}
+        \answer{
+            An all-pass filter is a type of filter that passes all frequencies with unity gain, but changes the phase relationship between different frequencies.
+            \begin{figure}[H]
+                \begin{center}
+                    \includegraphics[scale=0.3]{Fig/Q6za.png}
+                    \includegraphics[scale=0.25]{Fig/Q6zb.png}
+                    \caption{A all-pass filter designed using biquad filter.}
+                \end{center}
+            \end{figure}
+        }
     \end{subquestion}
 
 \end{question}
