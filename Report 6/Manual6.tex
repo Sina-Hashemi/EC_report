@@ -80,11 +80,8 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/4.jpeg}
                 \caption{oscilloscope's screen for sine wace.}
             \end{figure}
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/51.jpeg}
-                \caption{oscilloscope's screen for triangle wave.}
-            \end{figure}
+            We know $V_d = V_+ - V_- = V_{\sin} - 0$.
+            The op-amp boosts the input voltage, but since the output voltage exceeds +E at some points, the output voltage does not exceed this number. For the same reason, the output voltage does not decrease from -E.
         }
     \end{subquestion}
 
@@ -98,20 +95,28 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/8.jpeg}
                 \caption{The circuit used for making $\pm 0.5V$ using potentiometer.}
             \end{figure}
+            We know $V_d = V_+ - V_- = V_{\sin} - 0.5$. So for +E voltage we have $V_d > 0 \Rightarrow V_{\sin} > 0.5$ and $V_d < 0 \Rightarrow V_{\sin} < 0.5$.
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/7.jpeg}
                 \caption{oscilloscope's screen for $+0.5V$.}
             \end{figure}
+            We know $V_d = V_+ - V_- = V_{\sin} + 0.5$. So for +E voltage we have $V_d > 0 \Rightarrow V_{\sin} > -0.5$ and $V_d < 0 \Rightarrow V_{\sin} < -0.5$.
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/9.jpeg}
                 \caption{oscilloscope's screen for $-0.5V$.}
             \end{figure}
+            The above notes also applies to the triangular wave.
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/51.jpeg}
+                \caption{oscilloscope's screen for $+0.5V$ for triangle wave.}
+            \end{figure}
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/52.jpeg}
-                \caption{oscilloscope's screen for $+0.5V$ for triangle wave.}
+                \caption{oscilloscope's screen for $-0.5V$ for triangle wave.}
             \end{figure}
             }
         \end{subquestion}
@@ -124,21 +129,25 @@
                     \includegraphics[scale=\PicScale,angle=0]{Fig/10.jpeg}
                     \caption{The circuit.}
                 \end{figure}
+                We know $V_d = V_+ - V_- = 0 - V_{\sin}$.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[scale=\PicScale,angle=0]{Fig/11.jpeg}
                     \caption{oscilloscope's screen for $0V$.}
                 \end{figure}
+                We know $V_d = V_+ - V_- = 0.5 - V_{\sin}$. So for +E voltage we have $V_d > 0 \Rightarrow V_{\sin} < 0.5$ and $V_d < 0 \Rightarrow V_{\sin} > 0.5$.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[scale=\PicScale,angle=0]{Fig/12.jpeg}
                     \caption{oscilloscope's screen for $+0.5V$.}
+                We know $V_d = V_+ - V_- = -0.5 - V_{\sin}$. So for +E voltage we have $V_d > 0 \Rightarrow V_{\sin} < -0.5$ and $V_d < 0 \Rightarrow V_{\sin} > -0.5$.
                 \end{figure}
                 \begin{figure}[H]
                     \centering
                     \includegraphics[scale=\PicScale,angle=0]{Fig/13.jpeg}
                     \caption{oscilloscope's screen for $-0.5V$.}
                 \end{figure}
+                The above notes also applies to the triangular wave.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[scale=\PicScale,angle=0]{Fig/53.jpeg}
@@ -184,6 +193,7 @@
                 \includegraphics[scale=0.08,angle=0]{Fig/17.png}
                 \caption{oscilloscope's screen.}
             \end{figure}
+            As you can see, there is a voltage division between the two output sides of the potentiometer and a variable voltage (adjustable by us) enters the inverting base of the op-amp. We knows $V_d = V_+ - V_- = V_{\sin} - V_{potentiometer}$. As a result, by changing the voltage of the potentiometer and, the output will be the different for each voltage of the potentiometer, which you can see in the above images in three states.
         }
     \end{subquestion}
 
@@ -235,17 +245,20 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/23.jpeg}
                 \caption{oscilloscope's screen for $5mV$ voltage which used for Calculating Op-Amp's gain.}
             \end{figure}
+            We use the data from the second picture because the op amp is not saturated.
+            \[
+                Gain = \frac{V_{out}}{V_{in}} = \frac{2 \times 100mV}{1.5 \times 5mV} = 26.6
+            \]
         }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Devise an experiment to measure the input and output resistance of the amplifier module.}
         \answer{
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/123456.jpeg}
-                \caption{note for mohammad Mahdi, delete after read!!!!! its for helping you to write report and \textbf{should not be in final report}}
-            \end{figure}
+            For finding $R_{in}$ we connect a $R_s$ after $V_s$ and before $V_1$, we have:
+            \[
+                V_1 = \frac{R_{in}}{R_{in} + R_s} V_s
+            \]
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/38.jpeg}
@@ -256,6 +269,13 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/39.jpeg}
                 \caption{oscilloscope's screen for $R_{in}$.}
             \end{figure}
+            \[
+                \frac{R_{in}}{R_{in} + 10k} = \frac{13}{17} \Rightarrow R_{in} = 32.5k\Omega
+            \]
+            For finding $R_{out}$ We connect a resistor $R_L$. At first $R_L \to \infty$ so we find $AV_d$ and then we set $R_L = xk\Omega$, thus:
+            \[
+                V_2 = AV_d \frac{R_L}{R_L + R_{out}}
+            \]
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/40.jpeg}
@@ -276,6 +296,9 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/43.jpeg}
                 \caption{oscilloscope's screen for $R_{in}$ when $R_L = 1k\Omega$.}
             \end{figure}
+            \[
+                \frac{1k}{1k + R_{out}} = \frac{7}{17} \Rightarrow R_{out} = 1.4k\Omega
+            \]
         }
     \end{subquestion}
 
@@ -287,8 +310,9 @@
                 \includegraphics[scale=0.08,angle=0]{Fig/24.png}
                 \includegraphics[scale=0.08,angle=0]{Fig/25.png}
                 \includegraphics[scale=0.08,angle=0]{Fig/26.png}
-                \caption{oscilloscope's screen for different input voltages.}
+                \caption{oscilloscope's screen for different input amplitude.}
             \end{figure}
+            As you can see, the op-amp starts to saturate as the amplitude increases.
         }
     \end{subquestion}
 
@@ -300,6 +324,14 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/27.jpeg}
                 \caption{The Op-Amp can't follow input in high-frequency inputs.}
             \end{figure}
+            Op-amps have limitations in following high-frequency inputs due to several factors.
+            \begin{itemize}
+                \item Speed limit: Op-amps have a built-in speed limit. They can only change their output so fast.
+                \item Delay: There's a tiny delay between when a signal goes in and when it comes out. For really fast signals, this delay becomes a problem.
+                \item  Internal capacitors: Op-amps have tiny capacitors inside them. These act like small batteries that need to charge and discharge, which slows things down at high speeds.
+                \item Gain drop: Op-amps naturally amplify signals less at higher frequencies. It's like turning down the volume as the pitch gets higher.
+                \item Noise: At high frequencies, op-amps start to generate more electrical noise, which can mask the actual signal.
+            \end{itemize}
         }
     \end{subquestion}
 
@@ -338,17 +370,20 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/30.jpeg}
                 \caption{oscilloscope's screen for $5mV$ voltage which used for Calculating Op-Amp's gain.}
             \end{figure}
+            We use the data from the second picture because the op amp is not saturated.
+            \[
+                Gain = \frac{V_{out}}{V_{in}} = \frac{3 \times 100mV}{1.5 \times 5mV} = 40
+            \]
         }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Measure the input and output resistance of the amplifier module experimentally.}
         \answer{
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/123456.jpeg}
-                \caption{note for mohammad Mahdi, delete after read!!!!! its for helping you to write report and \textbf{should not be in final report}}
-            \end{figure}
+            For finding $R_{in}$ we connect a $R_s$ after $V_s$ and before $V_1$, we have:
+            \[
+                V_1 = \frac{R_{in}}{R_{in} + R_s} V_s
+            \]
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/44.jpeg}
@@ -365,6 +400,13 @@
                 \includegraphics[scale=0.1,angle=0]{Fig/47.jpeg}
                 \caption{voltages measured by multimeter for more accurate number.}
             \end{figure}
+            \[
+                \frac{R_{in}}{R_{in} + 10k} = \frac{0.2913}{0.2920} \Rightarrow R_{in} = 4.1M\Omega
+            \]
+            For finding $R_{out}$ We connect a resistor $R_L$. At first $R_L \to \infty$ so we find $AV_d$ and then we set $R_L = xk\Omega$, thus:
+            \[
+                V_2 = AV_d \frac{R_L}{R_L + R_{out}}
+            \]
             \begin{figure}[H]
                 \centering
                 \includegraphics[scale=\PicScale,angle=0]{Fig/48.jpeg}
@@ -380,6 +422,9 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/50.jpeg}
                 \caption{oscilloscope's screen for $R_{in}$ when $R_L = 1k\Omega$.}
             \end{figure}
+            \[
+                \frac{1k}{1k + R_{out}} = \frac{7}{9} \Rightarrow R_{out} = 0.3k\Omega
+            \]
         }
     \end{subquestion}
 
@@ -393,6 +438,7 @@
                 \includegraphics[scale=0.08,angle=0]{Fig/33.png}
                 \caption{oscilloscope's screen for different input voltages.}
             \end{figure}
+            As you can see, the op-amp starts to saturate as the amplitude increases.
         }
     \end{subquestion}
 
@@ -404,6 +450,7 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/34.jpeg}
                 \caption{The Op-Amp can't follow input in high-frequency inputs.}
             \end{figure}
+            As explained in experiment 4 section d, op-amp have limitations over high frequency.
         }
     \end{subquestion}
 
@@ -436,6 +483,13 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/36.jpeg}
                 \caption{oscilloscope's screen.}
             \end{figure}
+            \[
+                Gain = \frac{V_{out}}{V_{in}} = \frac{2 \times 5V}{1.5 \times 5mV} = 1333.3
+            \]
+            We also can Calculate Gain using $G_{tot}=G_{inv}G_{nnv}$.
+            \[
+                Gain_{total} = 26.6 \times 40 = 1064
+            \]
         }
     \end{subquestion}
 
@@ -447,6 +501,10 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/37.jpeg}
                 \caption{The oscilloscope's screen.}
             \end{figure}
+            \[
+                Gain = \frac{V_{out}}{V_{in}} = \frac{2 \times 5V}{1.5 \times 5mV} = 1333.3
+            \]
+            By moving these two amplifiers, there was no noticeable change in the gain of the circuit (of course, we may not have noticed the changes due to the accuracy of the oscilloscope), although it would not be strange if there was a difference (more explanation in experiment b of question 6).
         }
     \end{subquestion}
 
@@ -465,12 +523,65 @@
 
     %-------------------------------------------------------------
     \begin{subquestion}{From analytical point of view, is there any difference to change the order of the cascaded amplifiers?}
-        \answer{}
+        \answer{
+            Theoretically, the order of multiplication doesn't change the result. So, mathematically:
+            \[
+                G_{tot} = G_{inv} \times G_{nnv} = G_{nnv} \times G_{inv}
+            \]
+            This suggests that the order of cascading shouldn't matter for the overall gain. \\
+            An inverting amplifier introduces a $180^{\circ}$ phase shift, while a non-inverting amplifier doesn't introduce any phase shift $0^{\circ}$. The total phase shift will be $180^{\circ}$ regardless of the order:
+        }
     \end{subquestion}
 
     %-------------------------------------------------------------
     \begin{subquestion}{From practical point of view, is there any difference to change the order of the cascaded amplifiers? Justify your answer using PSpice simulation.}
-        \answer{}
+        \answer{
+            Yes, there are some difference.
+            \begin{itemize}
+                \item Input impedance: Non-inverting amplifiers typically have higher input impedance than inverting amplifiers. Placing the non-inverting amplifier first in the cascade can provide a higher overall input impedance. This is beneficial because:
+                \begin{itemize}
+                    \item It reduces loading on the signal source
+                    \item It minimizes signal attenuation at the input
+                    \item It can improve the overall signal-to-noise ratio
+                \end{itemize}
+                \item Output impedance: The output impedance of the first stage interacts with the input impedance of the second stage. This interaction can affect:
+                \begin{itemize}
+                    \item Signal transfer between stages
+                    \item Bandwidth of the overall system
+                    \item Potential for oscillations or instability
+                \end{itemize}
+                \item Noise considerations: In a cascade, the noise contribution of the first stage is generally more significant. This is because its noise gets amplified by subsequent stages. Therefore:
+                \begin{itemize}
+                    \item Placing the lower noise amplifier first can improve the overall noise performance
+                    \item This is especially important in low-signal applications where maintaining signal-to-noise ratio is crucial
+                \end{itemize}
+                \item Bandwidth: Each amplifier stage has its own bandwidth limitations. In a cascade:
+                \begin{itemize}
+                    \item The overall bandwidth is typically less than that of individual amplifiers
+                    \item The order of cascading can affect the final bandwidth, especially if the amplifiers have very different bandwidth characteristics
+                    \item Placing the higher bandwidth stage first might help preserve more of the signal's frequency content
+                \end{itemize}
+                \item Dynamic range and linearity:
+                The first stage in a cascade is more susceptible to overload from large input signals.
+                \begin{itemize}
+                    \item Placing the lower gain stage first can help prevent early saturation
+                    \item This can improve the overall linearity of the system
+                    \item It's particularly important when dealing with signals that have a wide dynamic range
+                \end{itemize}
+                \item DC offset: Any DC offset present at the output of the first stage gets amplified by the second stage.
+            \end{itemize}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.3,angle=0]{Fig/Q6a.png}
+                \caption{A simple circuit to check the effect of the order of the amplifiers on the final output.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.25,angle=0]{Fig/Q6b.png}
+                \caption{The input diagram (which is multiplied by $10$ to be visible on the diagram) and the output of two modes.}
+            \end{figure}
+            As you can see, there is a phase difference between the two modes and there is a difference between their output voltage.
+        }
     \end{subquestion}
 
 \end{question}
@@ -485,12 +596,30 @@
 
     %-------------------------------------------------------------
     \begin{subquestion}{What happens if the absolute values of the supply voltages differ? }
-        \answer{}
+        \answer{
+            When the absolute values of these supply voltages differ, it affects the op-amp's performance in several ways:
+            \begin{itemize}
+                \item Output swing: The maximum output voltage swing will be limited by the smaller of the two supply voltages. For example, if you have $+12V$ and $-5V$ supplies, the output swing will be more restricted in the negative direction.
+                \item Offset: An imbalance in supply voltages can introduce an offset voltage at the output, even when the inputs are balanced. This is because the internal circuitry of the op-amp may not be perfectly symmetrical.
+                \item Common-mode range: The input common-mode range will shift towards the larger supply voltage. This means the range of input voltages that the op-amp can handle without distortion will be asymmetrical.
+                \item Power consumption: The op-amp may consume more power from one supply than the other, which could be an issue in some designs.
+                \item Stability: In some cases, significantly unbalanced supply voltages might affect the op-amp's stability, potentially leading to oscillations or other undesired behaviors.
+            \end{itemize}
+        }
     \end{subquestion}
 
     %-------------------------------------------------------------
     \begin{subquestion}{Is it possible to use an op-amp with the supply voltages $0$ and $+V_s$? Explain.}
-        \answer{}
+        \answer{
+            Yes, This configuration is known as single-supply operation.
+            \begin{itemize}
+                \item Many modern op-amps are designed to work with a single supply voltage. In this case, the inverting leg is connected to ground $0V$ and the non-inverting leg is connected to $+V_{s}$.
+                \item The input common-mode range and output swing will be limited compared to a dual-supply configuration.O(The output can swing from near $0$ to near $+V_{s}$.)
+                \item To utilize the full range of the op-amp, input signals often need to be biased to a mid-supply voltage (around $+\frac{V_{s}}{2}$). This creates a "virtual ground" that allows the op-amp to handle both positive and negative variations of the input signal.
+            \end{itemize}
+            The op-amp cannot produce negative output voltages. Care must be taken to ensure the input doesn't go below ground, which could cause the op-amp to behave unpredictably. \\
+            Single-supply op-amps are common in battery-powered devices and systems where generating a negative supply would be inconvenient or inefficient.
+        }
     \end{subquestion}
 
 \end{question}
