@@ -618,7 +618,12 @@
     %-------------------------------------------------------------
     \begin{subquestion}{Is it possible to use an op-amp with the supply voltages $0$ and $+V_s$? Explain.}
         \answer{
-            Yes, it is indeed possible to use an operational amplifier (op-amp) with the supply voltages $0$ and $+V_s$. This configuration is known as **single-supply operation**. Here are some key points to consider:
+            Yes, it is indeed possible to use an operational amplifier (op-amp) with the supply voltages $0$ and $+V_s$.
+            This configuration is known as single-supply operation.
+            In this context, the op-amp is powered by a single supply voltage, which is typically positive.
+            The ground reference is connected to the inverting input,
+            while the non-inverting input is biased to a mid-supply voltage (around $+\frac{V_s}{2}$) to create a virtual ground.
+            It's important to note following points about single-supply op-amp operation:
             \begin{itemize}
                 \item Many modern op-amps are designed to work with a single supply voltage. In this case, the inverting input (or leg) is connected to ground ($0V$), and the non-inverting input is connected to the signal source within the range of $0$ to $+V_{s}$.
                 \item The input common-mode range and output swing will be limited compared to a dual-supply configuration. The output can swing from near $0$ to near $+V_{s}$, but it cannot go below $0$ or above $+V_{s}$.
