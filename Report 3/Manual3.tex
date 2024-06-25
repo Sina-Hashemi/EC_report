@@ -166,9 +166,21 @@
     \questiontext{\underline{This experiment should be done by the lab supervisor}. Each resistor has a specific maximum power rating. Connect a $0.25$ W $10$ $\Omega$ resistor to a DC power supply using an alligator clip wire. Sweep the voltage from $0$ to $5$ V and observe the results.}
 
     \answer{
-        This part was done by the lab supervisor.
-    }
+        This part was done by the lab supervisor. When a $0.25$ W, $10$ $\Omega$ resistor is connected to a DC power supply
+        and the voltage is swept from $0$ to $5$ V, the current through
+        the resistor increases linearly with the voltage, as per
+        Ohm's law ($I = \frac{V}{R}$).
 
+        However, the power dissipated by the resistor,
+        given by $P = IV = V^2/R$, also increases with the square
+        of the voltage. If the power exceeds the resistor's power
+        rating of $0.25$ W, the resistor can overheat and potentially
+        fail.
+
+        In this case, at $5$ V, the power dissipated by the resistor
+        would be $P = V^2/R = 5^2/10 = 2.5$ W, which exceeds the
+        resistor's power rating.
+    }
 \end{question}
 
 %----------------------------------------------------------------------------------------
@@ -190,17 +202,24 @@
                 \includegraphics[scale=0.08,angle=0]{Fig/7.jpeg}
             \end{figure}
 
-            This part was done by the lab supervisor.
-
+            This part was done by the lab supervisor. As can be seen, whn a $16$ V aluminum electrolytic capacitor is connected
+            directly to a $30$ V DC voltage, it exceeds the capacitor's rated maximum voltage.
+            This can lead to a breakdown of the dielectric material inside the capacitor, causing capacitor failure(explosion).
         }
     \end{subquestion}
 
     %--------------------------------------------
     \begin{subquestion}{Connect a $16$ V aluminum electrolytic capacitor inversely to a $16$ V DC voltage and observe the results.}
         \answer{
-            This part was done by the lab supervisor.
+            This part was done by the lab supervisor. When a $16$ V aluminum electrolytic capacitor is connected inversely
+            (i.e., with reversed polarity) to a $16$ V DC voltage, it can also lead to a breakdown. Electrolytic capacitors are polarized,
+            meaning they have a positive and a negative terminal. If they are connected in reverse, the oxide layer on the anode,
+            which acts as the dielectric, can break down, leading to a short circuit. This can cause the capacitor to heat up,
+            potentially leading to an explosion or leakage of the electrolyte.
+            In short, although the voltage limit is not exceeded, the polarity of the capacitor must be observed to prevent damage.
         }
     \end{subquestion}
+
 
 \end{question}
 
