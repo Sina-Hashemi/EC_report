@@ -365,14 +365,6 @@
                     \end{axis}
                 \end{tikzpicture}
             \end{figure}
-
-
-
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/1000.jpeg}
-                \caption{ A photo of captured resistor curve and its circuit.}
-            \end{figure}
         }
     \end{subquestion}
 
@@ -495,6 +487,33 @@
         \caption{A test circuit for extracting the characteristic curve of a resistive element using oscilloscope.} \label{fig:cir3}
     \end{figure}
 
+    % --------------------------------------------
+    \begin{subquestion}{How can the displayed Lissajous curve be used
+        to obtain the characteristic curve of a resistive element?}
+    \answer{
+        The Lissajous curve is a curve that is obtained by plotting the
+        voltage of one element versus the voltage of another element.
+        The slope of the curve is the ratio of the two voltages.
+        The characteristic curve of a resistive element can be obtained by
+        plotting the voltage of the resistive element versus
+        the current flowing through it.In this circuit the first output
+        shows the desired voltage of the element. Since the left side (resistor and D element)
+        is parallel to the right side (resistor and D element), the right output
+        is equivalent to the current flowing through the element.
+        So the Lissajous curve can be used to obtain the characteristic
+        curve of a resistive element.
+    }
+\end{subquestion}
+
+%--------------------------------------------
+\begin{subquestion}{Can the characteristic curve be extracted using the circuit of Fig. \ref{fig:cir2} and an oscilloscope? }
+    \answer{
+        yes, same as the previous question, if the value of
+        the D element is equal to r resistor, the characteristic curve
+        can be extracted using the circuit of Fig. \ref{fig:cir2} and an oscilloscope.
+    }
+\end{subquestion}
+
     \begin{subquestion}{Replace $D$ with a $1$ k$\Omega$ resistor and see the corresponding characteristic curve on the oscilloscope screen.}
         \answer{
             \begin{figure}[H]
@@ -529,35 +548,6 @@
             \end{figure}
         }
     \end{subquestion}
-
-    % --------------------------------------------
-    \begin{subquestion}{How can the displayed Lissajous curve be used
-            to obtain the characteristic curve of a resistive element?}
-        \answer{
-            The Lissajous curve is a curve that is obtained by plotting the
-            voltage of one element versus the voltage of another element.
-            The slope of the curve is the ratio of the two voltages.
-            The characteristic curve of a resistive element can be obtained by
-            plotting the voltage of the resistive element versus
-            the current flowing through it.In this circuit the first output
-            shows the desired voltage of the element. Since the left side (resistor and D element)
-            is parallel to the right side (resistor and D element), the right output
-            is equivalent to the current flowing through the element.
-            So the Lissajous curve can be used to obtain the characteristic
-            curve of a resistive element.
-        }
-    \end{subquestion}
-
-    %--------------------------------------------
-    \begin{subquestion}{Can the characteristic curve be extracted using the circuit of Fig. \ref{fig:cir2} and an oscilloscope? }
-        \answer{
-            yes, same as the previous question, if the value of
-            the D element is equal to r resistor, the characteristic curve
-            can be extracted using the circuit of Fig. \ref{fig:cir2} and an oscilloscope.
-        }
-    \end{subquestion}
-
-
 
 
 \end{question}
