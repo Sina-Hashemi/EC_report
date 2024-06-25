@@ -695,14 +695,56 @@
         \end{figure}
 
         \paragraph*{}
-        The circuit consists of a resistor and a capacitor connected in series. The input signal is applied to the circuit, and the output signal is measured across the capacitor. The output signal is then fed to the oscilloscope, and the XY mode is activated.
+        The circuit consists of a resistor and a capacitor connected in series. The input
+        signal is applied to the circuit, and the output signal is measured across the
+        capacitor. The output signal is then fed to the oscilloscope, and the XY mode is activated.
         The input signal is a sine wave with a frequency of $1$ KHz and an amplitude of $1$ V.
-        The amplitude of the input signal is swept from $0.1$ V to $1$ V, and the frequency is swept
-        from $1$ KHz to $10$ KHz. The results are shown in the figures above.
+        The amplitude of the input signal is swept from $0.1$ V to $1$ V,
+        and the frequency is swept from $1$ KHz to $10$ KHz. The results are shown in the figures above.
         The results show that the output signal is an oval which is really close to a circle.
-        The radius of the circle is proportional
-        to the amplitude of the input signal, and the frequency of the input signal determines the speed of the circle.
+        The radius of the circle is proportional to the amplitude of the input signal,
+        and the frequency of the input signal determines the speed of the circle.
 
+        \paragraph*{}
+        From the circuit, we can represent the input and output voltages as follows:
+        \begin{equation*}
+            V_i = A \cos(\omega t)
+        \end{equation*}
+        \begin{equation*}
+            V_o = B \cos(\omega t + \theta)
+        \end{equation*}
+        where $V_i$ is the input voltage, $V_o$ is the output voltage across the capacitor,
+        $A$ and $B$ are amplitudes, $\omega$ is the angular frequency, and $\theta$ is the phase difference.
+
+        \paragraph*{}
+        When visualizing the voltages on the oscilloscope in XY mode, the resulting plot
+        represents a Lissajous figure, given by the equation:
+        \begin{equation*}
+            \left(\frac{V_x}{A}\right)^2 + \left(\frac{V_y}{B}\right)^2 = 1
+        \end{equation*}
+        where $V_x$ and $V_y$ are the oscilloscope's X and Y inputs respectively.
+        This equation describes an ellipse, and for certain phase relationships, it can form a circle.
+
+        \paragraph*{}
+        If we assume specific conditions, such as $\theta = \frac{\pi}{2}$, the equations transform into:
+        \begin{equation*}
+            V_i = A \sin(\omega t)
+        \end{equation*}
+        \begin{equation*}
+            V_o = A \cos(\omega t)
+        \end{equation*}
+        This yields:
+        \begin{equation*}
+            V_i^2 + V_o^2 = A^2
+        \end{equation*}
+        representing a perfect circle with radius $A$, where $A$ is the amplitude of the input signal.
+
+        \paragraph*{}
+        Therefore, the observed output on the oscilloscope is an elliptical pattern that
+        approaches a circular shape as the phase difference between the input and output signals
+        approaches $\frac{\pi}{2}$. The radius of the observed pattern is directly proportional to the
+        amplitude of the input signal. By sweeping the frequency, the speed at which the pattern moves changes,
+        demonstrating the frequency dependence of the capacitor's impedance.
     }
 
 \end{question}
@@ -761,27 +803,44 @@
     }
     \answer{
         \paragraph*{}
-        The following factors can lead to a distorted representation of the oscilloscope calibration signal on the screen:
+        There are several factors that can lead to a distorted representation of the oscilloscope calibration signal on the screen. Some of these factors include:
+
         \begin{itemize}
-            \item Incorrect settings of the oscilloscope.
-            \item Poor quality of the input signal.
-            \item Incorrect connection of the probe.
-            \item Interference from other electronic devices.
-            \item Incorrect calibration of the oscilloscope.
-            \item Incorrect grounding of the oscilloscope.
-            \item Incorrect triggering settings.
+            \item Incorrect settings of the oscilloscope: Ensure that the
+                  oscilloscope settings, such as timebase, voltage scale, and trigger level,
+                  are properly configured for the input signal.
+            \item Poor quality of the input signal: Check the input signal source
+                  and make sure it is clean and free from noise or interference.
+            \item Incorrect connection of the probe: Ensure that the probe
+                  is properly connected to the oscilloscope and the circuit under test. Check for loose connections or damaged cables.
+            \item Interference from other electronic devices:
+                  Keep the oscilloscope away from other
+                  electronic devices that may introduce electromagnetic interference.
+            \item Incorrect calibration of the oscilloscope: Perform
+                  a calibration procedure on the oscilloscope to ensure accurate measurements.
+            \item Incorrect grounding of the oscilloscope: Ensure that the oscilloscope
+                  is properly grounded to avoid ground loops and unwanted noise.
+            \item Incorrect triggering settings: Adjust the triggering settings
+                  of the oscilloscope to properly capture the desired waveform.
         \end{itemize}
 
         \paragraph*{}
-        To resolve the problem, the following steps can be taken:
+        To resolve the problem, you can take the following steps:
+
         \begin{itemize}
-            \item Check the settings of the oscilloscope and adjust them as needed.
-            \item Ensure that the input signal is of good quality.
-            \item Check the connection of the probe and make sure it is properly connected.
-            \item Move the oscilloscope away from other electronic devices to reduce interference.
-            \item Check the calibration of the oscilloscope and recalibrate if necessary.
-            \item Ensure that the oscilloscope is properly grounded.
+            \item Check the settings of the oscilloscope and adjust them as needed to match the input signal.
+            \item Verify the quality of the input signal and eliminate any noise or interference sources.
+            \item Double-check the connection of the probe and ensure it is securely attached to
+                  the oscilloscope and the circuit.
+            \item Minimize the proximity of the oscilloscope to other electronic devices to reduce interference.
+            \item Perform a calibration procedure on the oscilloscope to ensure accurate measurements.
+            \item Ensure that the oscilloscope is properly grounded to avoid ground loops and unwanted noise.
+            \item Adjust the triggering settings of the oscilloscope to capture the desired waveform accurately.
         \end{itemize}
+
+        By following these steps, you can troubleshoot and resolve
+        any issues that may lead to a distorted representation
+        of the oscilloscope calibration signal on the screen.
     }
 
 \end{question}
