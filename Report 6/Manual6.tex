@@ -118,46 +118,46 @@
                 \includegraphics[scale=\PicScale,angle=0]{Fig/52.jpeg}
                 \caption{oscilloscope's screen for $-0.5V$ for triangle wave.}
             \end{figure}
-            }
-        \end{subquestion}
+        }
+    \end{subquestion}
 
-        %--------------------------------------------
-        \begin{subquestion}{Swap the input voltages to the op-amp and redo the previous parts.}
-            \answer{
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[scale=\PicScale,angle=0]{Fig/10.jpeg}
-                    \caption{The circuit.}
-                \end{figure}
-                We know $V_d = V_+ - V_- = 0 - V_{\sin}$.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[scale=\PicScale,angle=0]{Fig/11.jpeg}
-                    \caption{oscilloscope's screen for $0V$.}
-                \end{figure}
-                We know $V_d = V_+ - V_- = 0.5 - V_{\sin}$. So for +E voltage we have $V_d > 0 \Rightarrow V_{\sin} < 0.5$ and $V_d < 0 \Rightarrow V_{\sin} > 0.5$.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[scale=\PicScale,angle=0]{Fig/12.jpeg}
-                    \caption{oscilloscope's screen for $+0.5V$.}
+    %--------------------------------------------
+    \begin{subquestion}{Swap the input voltages to the op-amp and redo the previous parts.}
+        \answer{
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/10.jpeg}
+                \caption{The circuit.}
+            \end{figure}
+            We know $V_d = V_+ - V_- = 0 - V_{\sin}$.
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/11.jpeg}
+                \caption{oscilloscope's screen for $0V$.}
+            \end{figure}
+            We know $V_d = V_+ - V_- = 0.5 - V_{\sin}$. So for +E voltage we have $V_d > 0 \Rightarrow V_{\sin} < 0.5$ and $V_d < 0 \Rightarrow V_{\sin} > 0.5$.
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/12.jpeg}
+                \caption{oscilloscope's screen for $+0.5V$.}
                 We know $V_d = V_+ - V_- = -0.5 - V_{\sin}$. So for +E voltage we have $V_d > 0 \Rightarrow V_{\sin} < -0.5$ and $V_d < 0 \Rightarrow V_{\sin} > -0.5$.
-                \end{figure}
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[scale=\PicScale,angle=0]{Fig/13.jpeg}
-                    \caption{oscilloscope's screen for $-0.5V$.}
-                \end{figure}
-                The above notes also applies to the triangular wave.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[scale=\PicScale,angle=0]{Fig/53.jpeg}
-                    \caption{oscilloscope's screen for $0V$ for triangle wave.}
-                \end{figure}
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[scale=\PicScale,angle=0]{Fig/54.jpeg}
-                    \caption{oscilloscope's screen for $+0.5V$ for triangle wave.}
-                \end{figure}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/13.jpeg}
+                \caption{oscilloscope's screen for $-0.5V$.}
+            \end{figure}
+            The above notes also applies to the triangular wave.
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/53.jpeg}
+                \caption{oscilloscope's screen for $0V$ for triangle wave.}
+            \end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=\PicScale,angle=0]{Fig/54.jpeg}
+                \caption{oscilloscope's screen for $+0.5V$ for triangle wave.}
+            \end{figure}
         }
     \end{subquestion}
 
@@ -473,23 +473,23 @@
     %--------------------------------------------
     \begin{subquestion}{Apply a $100$-mV $1$-kHz sine voltage $v_{s}(t)$ to the input of the cascaded amplifiers. Watch the the output and input voltages of the cascaded amplifiers simultaneously on the oscilloscope. Calculate the overall gain of the cascaded amplifiers.}
         \answer{
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/35.jpeg}
-                \caption{The circuit.}
-            \end{figure}
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=\PicScale,angle=0]{Fig/36.jpeg}
-                \caption{oscilloscope's screen.}
-            \end{figure}
-            \[
-                Gain = \frac{V_{out}}{V_{in}} = \frac{2 \times 5V}{1.5 \times 5mV} = 1333.3
-            \]
-            We also can Calculate Gain using $G_{tot}=G_{inv}G_{nnv}$.
-            \[
-                Gain_{total} = 26.6 \times 40 = 1064
-            \]
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=\PicScale,angle=0]{Fig/35.jpeg}
+            \caption{The circuit.}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=\PicScale,angle=0]{Fig/36.jpeg}
+            \caption{oscilloscope's screen.}
+        \end{figure}
+        \[
+            Gain = \frac{V_{out}}{V_{in}} = \frac{2 \times 5V}{1.5 \times 5mV} = 1333.3
+        \]
+        We also can Calculate Gain using $G_{tot}=G_{inv}G_{nnv}$.
+        \[
+            Gain_{total} = 26.6 \times 40 = 1064
+        \]
         }
     \end{subquestion}
 
@@ -539,35 +539,35 @@
             Yes, there are some difference.
             \begin{itemize}
                 \item Input impedance: Non-inverting amplifiers typically have higher input impedance than inverting amplifiers. Placing the non-inverting amplifier first in the cascade can provide a higher overall input impedance. This is beneficial because:
-                \begin{itemize}
-                    \item It reduces loading on the signal source
-                    \item It minimizes signal attenuation at the input
-                    \item It can improve the overall signal-to-noise ratio
-                \end{itemize}
+                      \begin{itemize}
+                          \item It reduces loading on the signal source
+                          \item It minimizes signal attenuation at the input
+                          \item It can improve the overall signal-to-noise ratio
+                      \end{itemize}
                 \item Output impedance: The output impedance of the first stage interacts with the input impedance of the second stage. This interaction can affect:
-                \begin{itemize}
-                    \item Signal transfer between stages
-                    \item Bandwidth of the overall system
-                    \item Potential for oscillations or instability
-                \end{itemize}
+                      \begin{itemize}
+                          \item Signal transfer between stages
+                          \item Bandwidth of the overall system
+                          \item Potential for oscillations or instability
+                      \end{itemize}
                 \item Noise considerations: In a cascade, the noise contribution of the first stage is generally more significant. This is because its noise gets amplified by subsequent stages. Therefore:
-                \begin{itemize}
-                    \item Placing the lower noise amplifier first can improve the overall noise performance
-                    \item This is especially important in low-signal applications where maintaining signal-to-noise ratio is crucial
-                \end{itemize}
+                      \begin{itemize}
+                          \item Placing the lower noise amplifier first can improve the overall noise performance
+                          \item This is especially important in low-signal applications where maintaining signal-to-noise ratio is crucial
+                      \end{itemize}
                 \item Bandwidth: Each amplifier stage has its own bandwidth limitations. In a cascade:
-                \begin{itemize}
-                    \item The overall bandwidth is typically less than that of individual amplifiers
-                    \item The order of cascading can affect the final bandwidth, especially if the amplifiers have very different bandwidth characteristics
-                    \item Placing the higher bandwidth stage first might help preserve more of the signal's frequency content
-                \end{itemize}
+                      \begin{itemize}
+                          \item The overall bandwidth is typically less than that of individual amplifiers
+                          \item The order of cascading can affect the final bandwidth, especially if the amplifiers have very different bandwidth characteristics
+                          \item Placing the higher bandwidth stage first might help preserve more of the signal's frequency content
+                      \end{itemize}
                 \item Dynamic range and linearity:
-                The first stage in a cascade is more susceptible to overload from large input signals.
-                \begin{itemize}
-                    \item Placing the lower gain stage first can help prevent early saturation
-                    \item This can improve the overall linearity of the system
-                    \item It's particularly important when dealing with signals that have a wide dynamic range
-                \end{itemize}
+                      The first stage in a cascade is more susceptible to overload from large input signals.
+                      \begin{itemize}
+                          \item Placing the lower gain stage first can help prevent early saturation
+                          \item This can improve the overall linearity of the system
+                          \item It's particularly important when dealing with signals that have a wide dynamic range
+                      \end{itemize}
                 \item DC offset: Any DC offset present at the output of the first stage gets amplified by the second stage.
             \end{itemize}
             \begin{figure}[H]
@@ -598,27 +598,37 @@
     \begin{subquestion}{What happens if the absolute values of the supply voltages differ? }
         \answer{
             When the absolute values of these supply voltages differ, it affects the op-amp's performance in several ways:
+
             \begin{itemize}
                 \item Output swing: The maximum output voltage swing will be limited by the smaller of the two supply voltages. For example, if you have $+12V$ and $-5V$ supplies, the output swing will be more restricted in the negative direction.
+
                 \item Offset: An imbalance in supply voltages can introduce an offset voltage at the output, even when the inputs are balanced. This is because the internal circuitry of the op-amp may not be perfectly symmetrical.
+
                 \item Common-mode range: The input common-mode range will shift towards the larger supply voltage. This means the range of input voltages that the op-amp can handle without distortion will be asymmetrical.
+
                 \item Power consumption: The op-amp may consume more power from one supply than the other, which could be an issue in some designs.
+
                 \item Stability: In some cases, significantly unbalanced supply voltages might affect the op-amp's stability, potentially leading to oscillations or other undesired behaviors.
             \end{itemize}
+
+            It is important to consider these effects when designing circuits with op-amps and ensure that the supply voltages are properly balanced to achieve the desired performance.
         }
     \end{subquestion}
 
     %-------------------------------------------------------------
     \begin{subquestion}{Is it possible to use an op-amp with the supply voltages $0$ and $+V_s$? Explain.}
         \answer{
-            Yes, This configuration is known as single-supply operation.
+            Yes, it is indeed possible to use an operational amplifier (op-amp) with the supply voltages $0$ and $+V_s$. This configuration is known as **single-supply operation**. Here are some key points to consider:
             \begin{itemize}
-                \item Many modern op-amps are designed to work with a single supply voltage. In this case, the inverting leg is connected to ground $0V$ and the non-inverting leg is connected to $+V_{s}$.
-                \item The input common-mode range and output swing will be limited compared to a dual-supply configuration.O(The output can swing from near $0$ to near $+V_{s}$.)
-                \item To utilize the full range of the op-amp, input signals often need to be biased to a mid-supply voltage (around $+\frac{V_{s}}{2}$). This creates a "virtual ground" that allows the op-amp to handle both positive and negative variations of the input signal.
+                \item Many modern op-amps are designed to work with a single supply voltage. In this case, the inverting input (or leg) is connected to ground ($0V$), and the non-inverting input is connected to the signal source within the range of $0$ to $+V_{s}$.
+                \item The input common-mode range and output swing will be limited compared to a dual-supply configuration. The output can swing from near $0$ to near $+V_{s}$, but it cannot go below $0$ or above $+V_{s}$.
+                \item To utilize the full range of the op-amp, input signals often need to be biased to a mid-supply voltage (around $+\frac{V_{s}}{2}$). This creates a "virtual ground" that allows the op-amp to handle both positive and negative variations of the input signal around this mid-point.
+                \item It is important to note that the op-amp cannot produce negative output voltages in this configuration. Care must be taken to ensure the input doesn't go below ground, which could cause the op-amp to behave unpredictably or even damage the device.
             \end{itemize}
-            The op-amp cannot produce negative output voltages. Care must be taken to ensure the input doesn't go below ground, which could cause the op-amp to behave unpredictably. \\
-            Single-supply op-amps are common in battery-powered devices and systems where generating a negative supply would be inconvenient or inefficient.
+            Single-supply op-amps are common in battery-powered
+            devices and systems where generating a negative supply
+            would be inconvenient or inefficient. However, they require
+            careful design and signal conditioning to ensure proper operation.
         }
     \end{subquestion}
 
